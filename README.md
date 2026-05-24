@@ -18,19 +18,19 @@
   <img src="https://img.shields.io/badge/JavaScript-E6E6FA?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/TypeScript-E6E6FA?style=for-the-badge&logo=typescript&logoColor=black" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Java-E6E6FA?style=for-the-badge&logo=java&logoColor=black" alt="Java" />
-
+<br>
 
   <img src="https://img.shields.io/badge/React-FFB6C1?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/Tailwind-FFB6C1?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/HTML5-FFB6C1?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/CSS3-FFB6C1?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-
+<br>
 
   <img src="https://img.shields.io/badge/Node.js-E6E6FA?style=for-the-badge&logo=node.js&logoColor=black" alt="Node.js" />
   <img src="https://img.shields.io/badge/Flask-E6E6FA?style=for-the-badge&logo=flask&logoColor=black" alt="Flask" />
   <img src="https://img.shields.io/badge/Firebase-E6E6FA?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
   <img src="https://img.shields.io/badge/Postman-E6E6FA?style=for-the-badge&logo=postman&logoColor=black" alt="Postman" />
-
+<br>
 
   <img src="https://img.shields.io/badge/TensorFlow-FFB6C1?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
   <img src="https://img.shields.io/badge/scikit_learn-FFB6C1?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn" />
@@ -38,11 +38,11 @@
   <img src="https://img.shields.io/badge/Pandas-FFB6C1?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/OpenAI_API-FFB6C1?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI API" />
 
-
+<br>
   <img src="https://img.shields.io/badge/MySQL-E6E6FA?style=for-the-badge&logo=mysql&logoColor=black" alt="MySQL" />
   <img src="https://img.shields.io/badge/SQLite-E6E6FA?style=for-the-badge&logo=sqlite&logoColor=black" alt="SQLite" />
 
-
+<br>
   <img src="https://img.shields.io/badge/Git-FFB6C1?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-FFB6C1?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   <img src="https://img.shields.io/badge/VS_Code-FFB6C1?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
