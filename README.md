@@ -7,9 +7,9 @@
 
 ---
 <br/>
-🎓 **B.Tech CSE (AI & Data Science) @ IIIT Kottayam**
+**B.Tech CSE (AI & Data Science) @ IIIT Kottayam**
 
-🔍 Solving problems. Building solutions.
+Solving problems. Building solutions.
 
 ✨ Learning every day. Growing every commit. ✨
 
@@ -27,7 +27,7 @@
 <!-- PROFILE STATS ROW -->
 <div align="center">
 
-<a href="https://github.com/nidhirakesh05">
+<a href="https://github.com/nidheerakesh">
 <img src="https://komarev.com/ghpvc/?username=nidhirakesh05&label=Profile%20Views&color=E8A0BF&style=for-the-badge" alt="Profile Views"/>
 </a>
 &nbsp;&nbsp;
