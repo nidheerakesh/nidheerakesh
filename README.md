@@ -26,28 +26,10 @@ currently:
 
 <br>
 
-<div align="center">
-
-little progress everyday leads to big results 🌷
-
-</div>
-
 ---
 
-## 🧠 currently building
 
-🌸 Explain-It AI Chatbot  
-→ AI-powered learning assistant with adaptive explanations
-
-🩺 ECG Signal Analysis  
-→ ML workflows on healthcare datasets
-
-📚 Smart Planner  
-→ productivity + future AI scheduling
-
----
-
-## 🏆 competitive programming
+## 🏆 Competitive Programming
 
 <div align="center">
 
@@ -71,7 +53,7 @@ src="https://codo.li/nidhirakesh05/widget"/>
 
 ---
 
-## 📊 github stats
+## 📊 Github Stats
 
 <div align="center">
 
@@ -85,7 +67,7 @@ src="https://streak-stats.demolab.com?user=nidheerakesh&theme=transparent&hide_b
 
 ---
 
-## 🌷 contribution graph
+## 🌷 Contribution Graph
 
 <div align="center">
 
@@ -110,63 +92,9 @@ src="https://github-readme-activity-graph.vercel.app/graph?username=nidheerakesh
 
 ---
 
-## ✨ featured work
 
-<table>
 
-<tr>
-
-<td width="33%">
-
-### 🌸 Explain-It AI
-
-AI learning assistant
-
-React  
-Tailwind  
-LLM workflows
-
-</td>
-
-<td width="33%">
-
-### 🩺 ECG ML
-
-Healthcare AI
-
-Python  
-NumPy  
-Scikit-learn
-
-</td>
-
-<td width="33%">
-
-### 📚 Smart Planner
-
-Student productivity
-
-React  
-AI scheduling
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-## 🏅 achievements
-
-🌷 ML Co-Lead  
-🌷 GDG contributor  
-🌷 Active on Codeforces + CodeChef  
-🌷 Full Stack Internship experience
-
----
-
-## ☁️ now
+## ☁️ Now
 
 ```text
 reading → ML papers
@@ -182,7 +110,5 @@ goal → make technology more accessible
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=light"/>
 
 <br><br>
-
-made with chai ☕ + curiosity + too many open tabs
 
 </div>
