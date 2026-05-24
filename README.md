@@ -1,3 +1,23 @@
+
+<div align="center">
+
+<img width="100%"
+src="https://capsule-render.vercel.app/api?type=waving&height=220&color=E7EEF8&text=%20&reversal=true"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div align="center">
     <img width=300 src="./src/assets/main.gif"/>    
     <br/>
@@ -50,3 +70,66 @@ src="https://capsule-render.vercel.app/api?type=soft&height=60&color=E7EEF8&text
 />
 
 </p>
+
+
+
+
+
+
+
+
+
+
+<!-- EVERYTHING GOES HERE -->
+
+<h1>𝒩𝒾𝒹𝒽𝒾 ☁️</h1>
+
+<p>
+AI Engineer • Full Stack Developer • Competitive Programmer
+</p>
+
+<br>
+
+<!-- ABOUT -->
+<h2>✿ about me ✿</h2>
+
+<p>
+building things one tiny commit at a time<br>
+learning ml + web<br>
+documenting the journey
+</p>
+
+<br>
+
+<!-- TOOLS -->
+<h2>✿ tools & languages ✿</h2>
+
+<img
+src="https://skillicons.dev/icons?i=c,cpp,python,html,css,js,react,flutter,tensorflow,firebase,git,github,vscode,linux,gcp,aws&theme=light"
+/>
+
+<br><br>
+
+<!-- STATS -->
+<img
+src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&bg_color=00000000"
+/>
+
+<br>
+
+<img
+src="https://github-readme-streak-stats.herokuapp.com?user=YOUR_USERNAME&hide_border=true"
+/>
+
+<br><br>
+
+<i>
+little progress everyday leads to big results ☁️
+</i>
+
+<!-- END -->
+
+<img width="100%"
+src="https://capsule-render.vercel.app/api?type=waving&height=220&color=E7EEF8"/>
+
+</div>
