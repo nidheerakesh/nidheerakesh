@@ -8,7 +8,7 @@
 </div>
 
 --- 
-<h2 align="center">✿ tools • technologies • languages ✿</h2>
+<h2 align="center">✿ TOOLS • TECHNOLOGIES • LANGUAGES ✿</h2>
 
 <div align="center">
 
