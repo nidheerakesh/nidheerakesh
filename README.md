@@ -10,7 +10,7 @@
 <div align="center">
 
 <!-- HEADER BANNER -->
-<img src="assets/header_banner.png" alt="Nidhi's Kawaii Study Setup" width="100%"/>
+<img src="./src/assets/header_banner.png" alt="Nidhi's Kawaii Study Setup" width="100%"/>
 
 <!-- NAME & TITLE -->
 <br/>
