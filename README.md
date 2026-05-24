@@ -1,6 +1,36 @@
 <div align="center">
 
 <img width="100%"
+src="https://capsule-render.vercel.app/api?type=waving&height=320&text=Nidhi&fontAlign=50&fontAlignY=40&fontSize=65&animation=twinkling&customColorList=14,23,18,20"/>
+
+<br>
+
+<img width="95%"
+src="https://readme-typing-svg.herokuapp.com?font=Patrick+Hand&size=30&pause=1000&center=true&vCenter=true&multiline=true&width=1000&height=120&color=D7A5E5&lines=%E2%98%81%EF%B8%8F+AI+%7C+ML+Builder;%F0%9F%8C%B7+Competitive+Programmer;%F0%9F%93%9A+turning+curiosity+into+code"/>
+
+</div>
+
+<br>
+
+<p align="center">
+
+<img
+src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nidheerakesh&theme=transparent"/>
+
+</p>
+
+<div align="center">
+
+<img width="100%"
+src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYzJ0dGRsYW1vM3hoZzB2cnRwZ3BnOW9maDl6dW95MTRrOXljc3N5NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oriO0OEd9QIDdllqo/giphy.gif"/>
+
+</div>
+
+
+
+<div align="center">
+
+<img width="100%"
 src="https://capsule-render.vercel.app/api?type=waving&height=260&color=gradient&customColorList=14,18,20,23&text=hi%20i'm%20Nidhi☁️&fontAlign=50&fontAlignY=35&fontSize=50&animation=fadeIn"/>
 
 <br>
