@@ -24,35 +24,7 @@ Solving problems. Building solutions.
 
 </div>
 
-<!-- PROFILE STATS ROW -->
-<div align="center">
 
-<a href="https://github.com/nidheerakesh">
-<img src="https://komarev.com/ghpvc/?username=nidhirakesh05&label=Profile%20Views&color=E8A0BF&style=for-the-badge" alt="Profile Views"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://github.com/nidhirakesh05?tab=repositories">
-<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fnidhirakesh05&query=%24.public_repos&label=Repositories&style=for-the-badge&color=E8A0BF&logo=github&logoColor=white" alt="Repositories"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://github.com/nidhirakesh05?tab=followers">
-<img src="https://img.shields.io/github/followers/nidhirakesh05?label=Followers&style=for-the-badge&color=E8A0BF&logo=github&logoColor=white" alt="Followers"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://github.com/nidhirakesh05?tab=stars">
-<img src="https://img.shields.io/github/stars/nidhirakesh05?label=Total%20Stars&style=for-the-badge&color=E8A0BF&logo=github&logoColor=white&affiliations=OWNER" alt="Total Stars"/>
-</a>
-&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/nidhirakesh05/">
-<img src="https://img.shields.io/badge/Let's%20Connect!-E8A0BF?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-</a>
-<a href="mailto:nidhirakesh05@gmail.com">
-<img src="https://img.shields.io/badge/-E8A0BF?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-</a>
-
-</div>
-
-<br/>
 
 ---
 
@@ -65,7 +37,7 @@ Solving problems. Building solutions.
 
 ### 🌸 GitHub Stats
 
-<a href="https://github.com/nidhirakesh05">
+<a href="https://github.com/nidhieerakesh">
 <img src="https://github-readme-stats.vercel.app/api?username=nidhirakesh05&show_icons=true&theme=rose_pine&hide_border=true&bg_color=FFF5F5&title_color=E8A0BF&icon_color=E8A0BF&text_color=957DAD&count_private=true&include_all_commits=true" alt="GitHub Stats" width="100%"/>
 </a>
 
@@ -74,7 +46,7 @@ Solving problems. Building solutions.
 
 ### 🔥 Streak Stats
 
-<a href="https://github.com/nidhirakesh05">
+<a href="https://github.com/nidheerakesh">
 <img src="https://github-readme-streak-stats.herokuapp.com?user=nidhirakesh05&theme=rose_pine&hide_border=true&background=FFF5F5&stroke=E8A0BF&ring=E8A0BF&fire=FF6B6B&currStreakLabel=957DAD&sideLabels=957DAD&currStreakNum=957DAD&sideNums=957DAD&dates=CFBAE1" alt="Streak Stats" width="100%"/>
 </a>
 
@@ -83,7 +55,7 @@ Solving problems. Building solutions.
 
 ### 📊 Contribution Graph
 
-<a href="https://github.com/nidhirakesh05">
+<a href="https://github.com/nidheerakesh">
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=nidhirakesh05&bg_color=FFF5F5&color=957DAD&line=E8A0BF&point=E8A0BF&area_color=FADADD&area=true&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution Graph" width="100%"/>
 </a>
 
@@ -122,7 +94,7 @@ Solving problems. Building solutions.
 
 <br/>
 
-✅ *Synced from Codeforces, CodeChef, LeetCode and more*
+ *Synced from Codeforces, CodeChef, LeetCode and more*
 
 <br/>
 
