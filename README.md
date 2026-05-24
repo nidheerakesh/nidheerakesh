@@ -5,28 +5,9 @@
     <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Itim&size=40&duration=2000&pause=3000&color=E0DFF1&center=true&repeat=false&width=600&height=60&lines=Greetings%2C+wanderer!+I'm+Nidhi!" alt="Typing SVG" /></a>
 </div>
 
-
-
-
-
-<div align="center">
-
-<img width="100%"
-src="https://capsule-render.vercel.app/api?type=waving&height=260&color=gradient&customColorList=14,18,20,23&text=hi%20i'm%20Nidhi☁️&fontAlign=50&fontAlignY=35&fontSize=50&animation=fadeIn"/>
-
-<br>
-
-<img src="https://readme-typing-svg.herokuapp.com?font=Patrick+Hand&weight=500&size=24&duration=3000&pause=1000&color=CFA6E8&center=true&vCenter=true&width=800&lines=turning+curiosity+into+code;AI+%7C+ML+builder;competitive+programmer;building+things+that+help+people"/>
-
-<br><br>
-
-![](https://komarev.com/ghpvc/?username=nidheerakesh&style=for-the-badge&color=ffb6c1)
-
-</div>
-
 ---
 
-## ☁️ about me
+## ☁️ About Me
 
 ```yaml
 name: Nidhi Rakesh
@@ -40,7 +21,7 @@ focus:
 currently:
   - Building AI projects
   - Learning deeper ML concepts
-  - Improving CP
+  - Improving CP and DSA
 ```
 
 <br>
