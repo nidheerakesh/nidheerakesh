@@ -6,21 +6,7 @@
 </div>
 
 ---
-
-<div align="center">
-
-<!-- HEADER BANNER -->
-<img src="./src/assets/header_banner.png" alt="Nidhi's Kawaii Study Setup" width="100%"/>
-
-<!-- NAME & TITLE -->
 <br/>
-
-# ✿ *hii, i'm* **Nidhi** ✿
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=E8A0BF&center=true&vCenter=true&random=false&width=500&lines=AI%2FML+enthusiast+%26+builder+%E2%99%A1" alt="Typing SVG" />
-
-<br/>
-
 🎓 **B.Tech CSE (AI & Data Science) @ IIIT Kottayam**
 
 🔍 Solving problems. Building solutions.
@@ -33,13 +19,9 @@
 
 <!-- DIVIDER BANNER WITH TYPING SVG -->
 <div align="center">
-<img src="assets/divider_banner.png" alt="divider" width="100%"/>
+<img src="./src/assets/divider_banner.png" alt="divider" width="100%"/>
 
-<br/>
 
-> ✦ building **AI-powered** solutions that make **learning** and **healthcare** better ✨
-
-<br/>
 </div>
 
 <!-- PROFILE STATS ROW -->
