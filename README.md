@@ -6,238 +6,267 @@
 </div>
 
 ---
-<div align="center">
-
-![Header Banner](https://img.shields.io/badge/hi%2C%20i%27m-Nidhi-ff6b9d?style=for-the-badge&labelColor=1a1b26&color=9b59b6)
-
-# **AI/ML enthusiast & builder** 💜
-
-<img src="https://komarev.com/ghpvc/?username=nidhirakesh&color=ff6b9d&label=profile%20views&style=flat-square" alt="Profile Views" />
-
-</div>
-
----
-
-## <img src="https://em-content.zstatic.net/source/apple/354/graduation-cap_1f393.png" alt="" width="25"/> About Me
-
-```
-B.Tech CSE (AI & Data Science)
-@ IIIT Kottayam
-```
-
-📍 Solving problems. Building solutions.  
-🌱 Learning every day. Growing every commit.
-
-> **building AI-powered solutions that make learning and healthcare better** ✨
-
----
-
-## 📊 GitHub Overview
 
 <div align="center">
 
-| 👁️ Views | 🔥 Contributions | 📦 Repos | 👥 Followers | 🔗 Connect |
-|:---:|:---:|:---:|:---:|:---:|
-| **002725** | **1.1k+** | **25+** | **200+** | [GitHub](https://github.com/nidhirakesh) \| [LinkedIn](https://linkedin.com/in/nidhirakesh) \| [Mail](mailto:nidhi@example.com) |
+<!-- HEADER BANNER -->
+<img src="assets/header_banner.png" alt="Nidhi's Kawaii Study Setup" width="100%"/>
+
+<!-- NAME & TITLE -->
+<br/>
+
+# ✿ *hii, i'm* **Nidhi** ✿
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=E8A0BF&center=true&vCenter=true&random=false&width=500&lines=AI%2FML+enthusiast+%26+builder+%E2%99%A1" alt="Typing SVG" />
+
+<br/>
+
+🎓 **B.Tech CSE (AI & Data Science) @ IIIT Kottayam**
+
+🔍 Solving problems. Building solutions.
+
+✨ Learning every day. Growing every commit. ✨
+
+<br/>
 
 </div>
 
----
+<!-- DIVIDER BANNER WITH TYPING SVG -->
+<div align="center">
+<img src="assets/divider_banner.png" alt="divider" width="100%"/>
 
-## 📈 GitHub Stats
+<br/>
 
+> ✦ building **AI-powered** solutions that make **learning** and **healthcare** better ✨
+
+<br/>
+</div>
+
+<!-- PROFILE STATS ROW -->
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=nidhirakesh&show_icons=true&theme=midnight-purple&bg_color=1a1b26&text_color=e8e9f3&title_color=ff6b9d&border_color=ff6b9d&border_radius=10&hide=prs&icon_color=ff6b9d)
+<a href="https://github.com/nidhirakesh05">
+<img src="https://komarev.com/ghpvc/?username=nidhirakesh05&label=Profile%20Views&color=E8A0BF&style=for-the-badge" alt="Profile Views"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/nidhirakesh05?tab=repositories">
+<img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2Fnidhirakesh05&query=%24.public_repos&label=Repositories&style=for-the-badge&color=E8A0BF&logo=github&logoColor=white" alt="Repositories"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/nidhirakesh05?tab=followers">
+<img src="https://img.shields.io/github/followers/nidhirakesh05?label=Followers&style=for-the-badge&color=E8A0BF&logo=github&logoColor=white" alt="Followers"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://github.com/nidhirakesh05?tab=stars">
+<img src="https://img.shields.io/github/stars/nidhirakesh05?label=Total%20Stars&style=for-the-badge&color=E8A0BF&logo=github&logoColor=white&affiliations=OWNER" alt="Total Stars"/>
+</a>
+&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/nidhirakesh05/">
+<img src="https://img.shields.io/badge/Let's%20Connect!-E8A0BF?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="mailto:nidhirakesh05@gmail.com">
+<img src="https://img.shields.io/badge/-E8A0BF?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
 
 </div>
 
+<br/>
+
 ---
 
-## 🔥 Streak & Contributions
-
+<!-- GITHUB STATS, STREAK STATS, CONTRIBUTION GRAPH -->
 <div align="center">
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=nidhirakesh&theme=midnight-purple&hide_border=true&background=1a1b26&stroke=ff6b9d&ring=ff6b9d&fire=ff6b9d&currStreakNum=e8e9f3&sideNums=e8e9f3&dates=8b949e&currStreakLabel=ff6b9d)
+<table>
+<tr>
+<td width="33%" align="center">
+
+### 🌸 GitHub Stats
+
+<a href="https://github.com/nidhirakesh05">
+<img src="https://github-readme-stats.vercel.app/api?username=nidhirakesh05&show_icons=true&theme=rose_pine&hide_border=true&bg_color=FFF5F5&title_color=E8A0BF&icon_color=E8A0BF&text_color=957DAD&count_private=true&include_all_commits=true" alt="GitHub Stats" width="100%"/>
+</a>
+
+</td>
+<td width="33%" align="center">
+
+### 🔥 Streak Stats
+
+<a href="https://github.com/nidhirakesh05">
+<img src="https://github-readme-streak-stats.herokuapp.com?user=nidhirakesh05&theme=rose_pine&hide_border=true&background=FFF5F5&stroke=E8A0BF&ring=E8A0BF&fire=FF6B6B&currStreakLabel=957DAD&sideLabels=957DAD&currStreakNum=957DAD&sideNums=957DAD&dates=CFBAE1" alt="Streak Stats" width="100%"/>
+</a>
+
+</td>
+<td width="33%" align="center">
+
+### 📊 Contribution Graph
+
+<a href="https://github.com/nidhirakesh05">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=nidhirakesh05&bg_color=FFF5F5&color=957DAD&line=E8A0BF&point=E8A0BF&area_color=FADADD&area=true&hide_border=true&custom_title=Contribution%20Graph" alt="Contribution Graph" width="100%"/>
+</a>
+
+</td>
+</tr>
+</table>
 
 </div>
 
----
-
-## 🎯 Competitive Programming
-
-<div style="background: linear-gradient(135deg, rgba(255, 107, 157, 0.1), rgba(155, 89, 182, 0.1)); border: 1px solid rgba(255, 107, 157, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
-
-<h3 style="color: #ff6b9d; margin-top: 0;">🏅 Codolio Rating</h3>
-
-**nidhirakesh05**
-
-| Metric | Value |
-|--------|-------|
-| **Current Rating** | 1676 (Max) |
-| **Global Rank** | #48,921 |
-| **Country Rank** | #5,467 |
-
-> Synced from Codeforces, CodeChef, LeetCode and more
-
-[👉 View my Codolio profile](https://codolio.com/profile/nidhirakesh05)
-
-</div>
+<br/>
 
 ---
 
-## 🏆 Achievements
-
+<!-- COMPETITIVE PROGRAMMING & TROPHIES -->
 <div align="center">
 
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=nidhirakesh&theme=midnight-purple&column=6&margin-w=15&margin-h=15&no-bg=false&no-frame=false)
+<table>
+<tr>
+<td width="40%" align="center">
 
-**Key Achievements:** Pull Shark 🦈 • YOLO 🎯 • Commits Legend 🟢 • Repositories Contributor 📚 • Early Bird 🌅 • Multi Language 🌐
+### 💻 Competitive Programming
+
+<br/>
+
+<!-- Dynamic LeetCode Stats Card -->
+<a href="https://leetcode.com/nidhirakesh05">
+<img src="https://leetcard.jacoblin.cool/nidhirakesh05?theme=light&font=Fira%20Code&ext=contest&border=0&radius=12" alt="LeetCode Stats" width="100%"/>
+</a>
+
+<br/><br/>
+
+<!-- Codolio Profile Link -->
+<a href="https://codolio.com/profile/nidhirakesh05">
+<img src="https://img.shields.io/badge/Codolio-nidhirakesh05-E8A0BF?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiIGZpbGw9IiNFOEEwQkYiLz48L3N2Zz4=&logoColor=white" alt="Codolio"/>
+</a>
+
+<br/>
+
+✅ *Synced from Codeforces, CodeChef, LeetCode and more*
+
+<br/>
+
+<a href="https://codolio.com/profile/nidhirakesh05">
+<img src="https://img.shields.io/badge/View%20my%20Codolio%20profile%20→-FFF5F5?style=flat-square&labelColor=FFF5F5&color=E8A0BF" alt="Codolio Profile"/>
+</a>
+
+</td>
+<td width="60%" align="center">
+
+### 🏆 GitHub Trophies
+
+<br/>
+
+<a href="https://github.com/nidhirakesh05">
+<img src="https://github-profile-trophy.vercel.app/?username=nidhirakesh05&theme=rose_pine&no-frame=true&no-bg=true&margin-w=10&margin-h=10&column=4&row=2" alt="GitHub Trophies" width="100%"/>
+</a>
+
+<br/>
+
+> *Consistency is the secret ingredient.* 💖
+
+</td>
+</tr>
+</table>
 
 </div>
+
+<br/>
 
 ---
 
-## ⭐ Featured Projects
-
-<div style="display: grid; gap: 20px; margin: 30px 0;">
-
-<div style="background: linear-gradient(135deg, rgba(255, 107, 157, 0.12), rgba(155, 89, 182, 0.08)); border-left: 4px solid #ff6b9d; padding: 22px; border-radius: 10px; border: 1px solid rgba(255, 107, 157, 0.2);">
-
-### 💜 **Explain-It AI Chatbot**
-**Badge:** ![AI/LLM](https://img.shields.io/badge/AI%2FLLM-ff6b9d?style=flat-square)
-
-AI-powered learning assistant using React, Tailwind CSS and structured prompting techniques with LLM API integration for adaptive explanations.
-
-**Tech Stack:** `React` • `Tailwind CSS` • `LLM APIs` • `JavaScript`
-
-[👉 View Repository](https://github.com/nidhirakesh/explain-it)
-
-</div>
-
-<div style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.12), rgba(76, 175, 80, 0.08)); border-left: 4px solid #4CAF50; padding: 22px; border-radius: 10px; border: 1px solid rgba(76, 175, 80, 0.2);">
-
-### 🏥 **ECG Signal Analysis**
-**Badge:** ![Healthcare AI](https://img.shields.io/badge/Healthcare%20AI-4CAF50?style=flat-square)
-
-Analyzed MIT-BIH Arrhythmia dataset using Python, scikit-learn processing, feature extraction and ML models for arrhythmia classification and evaluation.
-
-**Tech Stack:** `Python` • `Scikit-learn` • `Pandas` • `NumPy` • `Jupyter`
-
-[👉 View Repository](https://github.com/nidhirakesh/ecg-analysis)
-
-</div>
-
-<div style="background: linear-gradient(135deg, rgba(255, 193, 7, 0.12), rgba(255, 193, 7, 0.08)); border-left: 4px solid #FFC107; padding: 22px; border-radius: 10px; border: 1px solid rgba(255, 193, 7, 0.2);">
-
-### 📝 **Smart Planner**
-**Badge:** ![Productivity](https://img.shields.io/badge/Productivity-FFC107?style=flat-square)
-
-Student productivity planner built with React for task scheduling and exam tracking. Exploring AI-based intelligent scheduling and task recommendations.
-
-**Tech Stack:** `React` • `Tailwind CSS` • `JavaScript` • `Local Storage`
-
-[👉 View Repository](https://github.com/nidhirakesh/smart-planner)
-
-</div>
-
-</div>
-
----
-
-## 🛠️ Tech Stack
-
+<!-- TECH STACK -->
 <div align="center">
 
-### **Languages**
+### 🛠️ Tech Stack
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=1a1b26)
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white&labelColor=1a1b26)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white&labelColor=1a1b26)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black&labelColor=1a1b26)
+<br/>
 
-### **ML & Data Science**
-
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=1a1b26)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=1a1b26)
-![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&labelColor=1a1b26)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white&labelColor=1a1b26)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white&labelColor=1a1b26)
-
-### **Frontend**
-
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black&labelColor=1a1b26)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white&labelColor=1a1b26)
-![HTML5](https://img.shields.io/badge/HTML5-E34C26?style=for-the-badge&logo=html5&logoColor=white&labelColor=1a1b26)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white&labelColor=1a1b26)
-
-### **Backend & Tools**
-
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white&labelColor=1a1b26)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white&labelColor=1a1b26)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=1a1b26)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=1a1b26)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white&labelColor=1a1b26)
+![Python](https://img.shields.io/badge/Python-E8A0BF?style=for-the-badge&logo=python&logoColor=white)
+![C++](https://img.shields.io/badge/C++-E8A0BF?style=for-the-badge&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-E8A0BF?style=for-the-badge&logo=c&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-E8A0BF?style=for-the-badge&logo=javascript&logoColor=white)
+![React](https://img.shields.io/badge/React-CFBAE1?style=for-the-badge&logo=react&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-CFBAE1?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-CFBAE1?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-CFBAE1?style=for-the-badge&logo=flask&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-957DAD?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-957DAD?style=for-the-badge&logo=pandas&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-957DAD?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-957DAD?style=for-the-badge&logo=firebase&logoColor=white)
+![Git](https://img.shields.io/badge/Git-FADADD?style=for-the-badge&logo=git&logoColor=957DAD)
+![GitHub](https://img.shields.io/badge/GitHub-FADADD?style=for-the-badge&logo=github&logoColor=957DAD)
+![VS Code](https://img.shields.io/badge/VS%20Code-FADADD?style=for-the-badge&logo=visualstudiocode&logoColor=957DAD)
+![Postman](https://img.shields.io/badge/Postman-FADADD?style=for-the-badge&logo=postman&logoColor=957DAD)
 
 </div>
 
----
-
-## 🎯 Currently Working On
-
-<div style="background: linear-gradient(135deg, rgba(155, 89, 182, 0.12), rgba(155, 89, 182, 0.08)); border: 1px solid rgba(155, 89, 182, 0.3); border-radius: 12px; padding: 25px; margin: 20px 0;">
-
-- ✅ **Mastering Machine Learning & Deep Learning** 🧠
-- ✅ **Building AI projects that create impact** 🚀
-- ✅ **Improving in DSA & Competitive Programming** 💻
-- ✅ **Exploring LLMs, Prompt Engineering & Agents** 🤖
-- ✅ **Reading research papers & building in public** 📖
-
-</div>
+<br/>
 
 ---
 
-## 📚 Currently Reading
-
+<!-- MOST USED LANGUAGES -->
 <div align="center">
 
-![Currently Reading](https://img.shields.io/badge/📖%20Atomic%20Habits%20-%20James%20Clear-ff6b9d?style=for-the-badge&labelColor=1a1b26)
+### 📈 Most Used Languages
+
+<br/>
+
+<a href="https://github.com/nidhirakesh05">
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=nidhirakesh05&layout=compact&theme=rose_pine&hide_border=true&bg_color=FFF5F5&title_color=E8A0BF&text_color=957DAD&langs_count=8" alt="Top Languages" width="45%"/>
+</a>
 
 </div>
 
+<br/>
+
 ---
 
-## 💭 Dev Philosophy
-
+<!-- FOOTER -->
 <div align="center">
 
-> "Programs must be written for people to read, and only incidentally for machines to execute."
->
-> — **Hal Abelson**
+<img src="assets/footer_banner.png" alt="footer" width="60%"/>
+
+<br/><br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=E8A0BF&height=100&section=footer" width="100%"/>
+
+**Thanks for stopping by! Let's build something amazing together 💖**
+
+<br/>
+
+<a href="https://github.com/nidhirakesh05">
+<img src="https://img.shields.io/badge/⭐%20Star%20my%20repos%20if%20you%20find%20them%20useful!-FFF5F5?style=for-the-badge&labelColor=E8A0BF&color=E8A0BF" alt="Star"/>
+</a>
 
 </div>
 
----
+<!-- SNAKE ANIMATION (Optional - requires GitHub Action setup) -->
+<!-- 
+To enable the snake animation, create a GitHub Action:
+1. Go to your profile repo → Actions → New Workflow
+2. Use this workflow to generate the snake SVG:
 
-<div align="center">
+name: Generate Snake
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: nidhirakesh05
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-## 💜 Let's Connect!
-
-**little progress everyday leads to big results**
-
-Thanks for stopping by! Let's build something amazing together.
-
-### 🔗 Find Me On
-
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)](https://github.com/nidhirakesh)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/nidhirakesh)
-[![Email](https://img.shields.io/badge/Email-FF6B6B?style=for-the-badge&logo=gmail)](mailto:nidhi@example.com)
-=
-
----
-
-<img src="https://img.shields.io/badge/Last%20Updated-May%202025-ff6b9d?style=flat-square" alt="Last Updated" />
-
-**Always learning, always building.** 🚀
-
-</div>
+Then uncomment this line:
+<img src="https://raw.githubusercontent.com/nidhirakesh05/nidhirakesh05/output/github-snake.svg" alt="Snake animation" />
+-->
