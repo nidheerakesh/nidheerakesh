@@ -60,3 +60,21 @@
   ☁️ <b>Interests:</b> LLM Applications • Healthcare AI • Web Development • Cloud<br>
   ☁️ <b>Core:</b> Problem Solving • DSA • Human AI Interaction
 </p>
+
+<div align="center">
+  <br>
+  <p>☁️ ─── ✿ ─── ☁️</p>
+  <br>
+
+  <h2>𝑔𝒾𝓉𝒽𝓊𝒷 𝓈𝓉𝒶𝓉𝓈</h2>
+
+  <a href="https://github.com/nidheerakesh">
+    <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&hide_border=true&bg_color=00000000&title_color=5F78A7&text_color=5F78A7&icon_color=B8CAE8" alt="GitHub Stats" />
+  </a>
+  
+  <a href="https://github.com/nidheerakesh">
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&hide_border=true&bg_color=00000000&title_color=5F78A7&text_color=5F78A7" alt="Top Languages" />
+  </a>
+
+  <br>
+</div>
