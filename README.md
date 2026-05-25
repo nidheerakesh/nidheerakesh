@@ -73,10 +73,25 @@
   <p>☁️ ─── ✿ ─── ☁️</p>
   <br>
 
-  <h2>DSA S𝗍𝖺𝗍𝗌</h2>
+<div align="center">
+  <br>
+  <p>☁️ ─── ✿ ─── ☁️</p>
+  <br>
 
-  <a href="https://leetcode.com/nidhirakesh05">
+  <h2>DSA & CP S𝗍𝖺𝗍𝗌</h2>
+
+  <a href="https://leetcode.com/nidhirakesh05" target="_blank">
     <img src="https://leetcard.jacoblin.cool/nidhirakesh05?ext=activity&border=0&radius=10&colors=00000000,00000000,5F78A7,5F78A7,B8CAE8,D7E4F5,E7EEF8,B8CAE8" alt="LeetCode Stats" />
+  </a>
+
+  <br><br>
+
+  <a href="https://codeforces.com/profile/nidhirakesh05" target="_blank">
+    <img src="https://img.shields.io/badge/Codeforces-E6E6FA?style=for-the-badge&logo=codeforces&logoColor=black" alt="Codeforces" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.codechef.com/users/nidhirakesh05" target="_blank">
+    <img src="https://img.shields.io/badge/CodeChef-FFB6C1?style=for-the-badge&logo=codechef&logoColor=white" alt="CodeChef" />
   </a>
 
   <br>
