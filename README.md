@@ -75,8 +75,8 @@
 
   <h2>𝒹𝓈𝒶 𝓈𝓉𝒶𝓉𝓈</h2>
 
-  <a href="https://leetcode.com/YOUR_LEETCODE_USERNAME">
-    <img src="https://leetcard.jacoblin.cool/YOUR_LEETCODE_USERNAME?ext=activity&border=0&radius=10&colors=00000000,00000000,5F78A7,5F78A7,B8CAE8,D7E4F5,E7EEF8,B8CAE8" alt="LeetCode Stats" />
+  <a href="https://leetcode.com/nidhirakesh05">
+    <img src="https://leetcard.jacoblin.cool/nidhirakesh05?ext=activity&border=0&radius=10&colors=00000000,00000000,5F78A7,5F78A7,B8CAE8,D7E4F5,E7EEF8,B8CAE8" alt="LeetCode Stats" />
   </a>
 
   <br>
