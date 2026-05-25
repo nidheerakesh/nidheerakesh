@@ -63,10 +63,9 @@
 
 <div align="center">
   <br>
-  <p>☁️ ─── ✿ ─── ☁️</p>
-  <br>
+---  <br>
 
-  <h2>𝖽|𝗌𝖺, 𝖼𝗉 & 𝖼𝗈𝖽𝗈𝗅𝗂𝗈 𝗌𝗍𝖺𝗍𝗌</h2>
+  <h2>DSA and CP Stats</h2>
 
   <a href="https://leetcode.com/nidhirakesh05" target="_blank">
     <img src="https://leetcard.jacoblin.cool/nidhirakesh05?ext=activity&border=0&radius=12&colors=E7EEF8,5F78A7,5F78A7,B8CAE8,B8CAE8,D7E4F5,FFFFFF,5F78A7" alt="LeetCode Stats" />
