@@ -66,29 +66,29 @@
   <p>☁️ ─── ✿ ─── ☁️</p>
   <br>
 
-  <h2>𝖽𝗌𝖺, 𝖼𝗉 & 𝖼𝗈𝖽𝗈𝗅𝗂𝗈 𝗌𝗍𝖺𝗍𝗌</h2>
+  <h2>𝖽|𝗌𝖺, 𝖼𝗉 & 𝖼𝗈𝖽𝗈𝗅𝗂𝗈 𝗌𝗍𝖺𝗍𝗌</h2>
 
   <a href="https://leetcode.com/nidhirakesh05" target="_blank">
-    <img src="https://leetcard.jacoblin.cool/nidhirakesh05?ext=activity&border=0&radius=10&colors=00000000,00000000,5F78A7,5F78A7,B8CAE8,D7E4F5,E7EEF8,B8CAE8" alt="LeetCode Stats" />
+    <img src="https://leetcard.jacoblin.cool/nidhirakesh05?ext=activity&border=0&radius=12&colors=E7EEF8,5F78A7,5F78A7,B8CAE8,B8CAE8,D7E4F5,FFFFFF,5F78A7" alt="LeetCode Stats" />
   </a>
 
   <br><br>
 
   <a href="https://codeforces.com/profile/nidhirakesh05" target="_blank">
-    <img src="https://codeforces-readme-stats.vercel.app/api/card?username=nidhirakesh05&theme=none&title_color=5F78A7&text_color=5F78A7&icon_color=B8CAE8&border_color=00000000&card_width=450" alt="Codeforces Stats" />
+    <img src="https://img.shields.io/badge/Codeforces-E6E6FA?style=for-the-badge&logo=codeforces&logoColor=5F78A7&labelColor=E7EEF8" alt="Codeforces" />
   </a>
-
-  <br><br>
-
+  &nbsp;
   <a href="https://www.codechef.com/users/nidhirakesh05" target="_blank">
-    <img src="https://img.shields.io/json?url=https%3A%2F%2Fcodechef-api.vercel.app%2Fnidhirakesh05&query=%24.currentRating&style=for-the-badge&color=FFB6C1&label=CodeChef+Rating&labelColor=5F78A7" alt="CodeChef Rating" />
+    <img src="https://img.shields.io/badge/CodeChef-FFB6C1?style=for-the-badge&logo=codechef&logoColor=5F78A7&labelColor=E7EEF8" alt="CodeChef" />
   </a>
-  &nbsp;&nbsp;
-  <a href="https://www.codechef.com/users/nidhirakesh05" target="_blank">
-    <img src="https://img.shields.io/json?url=https%3A%2F%2Fcodechef-api.vercel.app%2Fnidhirakesh05&query=%24.stars&style=for-the-badge&color=B8CAE8&label=Stars&labelColor=5F78A7" alt="CodeChef Stars" />
+  &nbsp;
+  <a href="https://codolio.com/profile/nidhirakesh05" target="_blank">
+    <img src="https://img.shields.io/badge/Codolio_Portfolio-B8CAE8?style=for-the-badge&logo=codeclimate&logoColor=5F78A7&labelColor=E7EEF8" alt="Codolio" />
   </a>
 
-  <br><br>
+  <br>
+</div>
+
 
   <a href="https://codolio.com/profile/nidhirakesh05" target="_blank">
     <img src="https://img.shields.io/badge/𝖼𝗈𝖽𝗈𝗅𝗂𝗈_𝗉𝗈𝗋𝗍𝖿𝗈𝗅𝗂𝗈-E6E6FA?style=for-the-badge&logo=codeclimate&logoColor=5F78A7&label=𝖼𝗈𝖽𝗈𝗅𝗂𝗈&labelColor=B8CAE8&color=E6E6FA" alt="Codolio Profile" />
