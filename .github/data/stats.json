@@ -1,0 +1,22 @@
+{
+  "CodeChef": {
+    "note": null,
+    "rating": 1096,
+    "solved": 779
+  },
+  "Codeforces": {
+    "maxRating": 632,
+    "note": "newbie",
+    "rating": 632,
+    "solved": 16
+  },
+  "LeetCode": {
+    "contests": null,
+    "easy": 15,
+    "hard": 2,
+    "medium": 13,
+    "note": null,
+    "rating": null,
+    "solved": 30
+  }
+}
