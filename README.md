@@ -158,8 +158,7 @@
 <h2 align="center">✿ SAY HELLO ✿</h2>
 
 <div align="center">
-  <!-- TODO: replace TODO-your-handle below with your real LinkedIn handle -->
-  <a href="https://linkedin.com/in/TODO-your-handle" target="_blank">
+  <a href="https://www.linkedin.com/in/nidhi-rakesh-677a28311" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-B8CAE8?style=for-the-badge&logo=linkedin&logoColor=5F78A7&labelColor=E7EEF8" alt="LinkedIn" />
   </a>
   &nbsp;
