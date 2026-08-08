@@ -33,6 +33,7 @@ jobs:
       # the README never points at a missing file.
       - name: Fall back to default contribution city
         if: hashFiles('profile-3d-contrib/profile-customize.svg') == ''
+        continue-on-error: true
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -40,7 +41,12 @@ jobs:
 
       - name: Use default render as the custom file
         if: hashFiles('profile-3d-contrib/profile-customize.svg') == ''
-        run: cp profile-3d-contrib/profile-season.svg profile-3d-contrib/profile-customize.svg
+        run: |
+          if [ -f profile-3d-contrib/profile-season.svg ]; then
+            cp profile-3d-contrib/profile-season.svg profile-3d-contrib/profile-customize.svg
+          else
+            echo "::warning::no contribution city was generated; keeping the previous SVG"
+          fi
 
       - name: Build Codolio card
         run: python3 .github/scripts/codolio_card.py
