@@ -1,0 +1,78 @@
+name: refresh profile
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 3D isometric contribution city, in the pastel palette.
+      - name: Generate contribution city
+        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/data/3d-contrib-settings.json
+
+      # If the custom settings were rejected, fall back to the stock renderer so
+      # the README never points at a missing file.
+      - name: Fall back to default contribution city
+        if: hashFiles('profile-3d-contrib/profile-customize.svg') == ''
+        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Use default render as the custom file
+        if: hashFiles('profile-3d-contrib/profile-customize.svg') == ''
+        run: |
+          if [ -f profile-3d-contrib/profile-season.svg ]; then
+            cp profile-3d-contrib/profile-season.svg profile-3d-contrib/profile-customize.svg
+          else
+            echo "::warning::no contribution city was generated; keeping the previous SVG"
+          fi
+
+      - name: Build DSA & CP card
+        run: python3 .github/scripts/stats_card.py
+
+      # The runner can reach dsastats; this sandbox could not. Logs whether the
+      # third-party Codolio card in the README is actually serving an image.
+      - name: Probe dsastats Codolio card
+        continue-on-error: true
+        run: |
+          code=$(curl -s -o /tmp/dsastats.out -w '%{http_code}' --max-time 20 \
+            https://dsastats.vercel.app/api/codolio/nidhirakesh05 || echo 000)
+          echo "dsastats HTTP $code"
+          head -c 300 /tmp/dsastats.out || true
+          if [ "$code" != "200" ]; then
+            echo "::warning::dsastats returned $code — the Codolio card in the README may be broken; remove it if so"
+          fi
+
+      - name: Refresh projects showcase
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/projects.py
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: refresh profile stats"
+          git push
