@@ -6,22 +6,34 @@
 </div>
 
 <p align="center">
-  ☁️ <b>Domains:</b> Artificial Intelligence • Machine Learning • Full Stack Development<br />
-  ☁️ <b>Interests:</b> LLM Applications • Healthcare AI • Web Development • Cloud<br />
-  ☁️ <b>Core:</b> Problem Solving • DSA • Human AI Interaction
+  Computer science undergrad at IIIT Kottayam. Most of my time goes to AI and machine<br />
+  learning — LLM applications and healthcare AI especially — with regular detours into<br />
+  full stack and cloud. I like problems where the hard part is the thinking.
 </p>
 
-<h3 align="center">✨ currently</h3>
+<br />
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/currently-dark.png" />
+    <img src="./assets/headings/currently-light.png" alt="Currently" height="23" />
+  </picture>
+</div>
 
 <p align="center">
-  🌱 <b>building</b> — LLM applications & healthcare AI<br />
-  📖 <b>learning</b> — full stack development & cloud<br />
-  💌 <b>open to</b> — internships, collabs, and anything that sounds fun
+  <b>building</b> — LLM applications and healthcare AI<br />
+  <b>learning</b> — full stack development and cloud<br />
+  <b>open to</b> — internships and collaborations
 </p>
 
-<img src="./assets/divider_banner.png" width="100%" alt="" />
+<br />
 
-<h2 align="center">✿ TOOLS • TECHNOLOGIES • LANGUAGES ✿</h2>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/tools-dark.png" />
+    <img src="./assets/headings/tools-light.png" alt="Tools and tech" height="23" />
+  </picture>
+</div>
 
 <div align="center">
 
@@ -66,16 +78,28 @@
 
 </div>
 
-<img src="./assets/divider_banner.png" width="100%" alt="" />
+<br />
 
-<h2 align="center">✿ GITHUB STATS ✿</h2>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/stats-dark.png" />
+    <img src="./assets/headings/stats-light.png" alt="GitHub stats" height="23" />
+  </picture>
+</div>
 
 <div align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=nidheerakesh&show_icons=true&include_all_commits=true&rank_icon=github&hide_title=true&bg_color=FDF6EC&title_color=5F78A7&text_color=8B5E4B&icon_color=FFB6C1&border_color=FFD9E0&border_radius=14" alt="GitHub stats" />
   <img height="170" src="https://streak-stats.demolab.com/?user=nidheerakesh&background=FDF6EC&border=FFD9E0&stroke=FFD9E0&ring=FFB6C1&fire=FFB6C1&currStreakNum=5F78A7&sideNums=5F78A7&currStreakLabel=8B5E4B&sideLabels=8B5E4B&dates=8B5E4B&border_radius=14" alt="Contribution streak" />
 </div>
 
-<h3 align="center">🏙️ my contribution city</h3>
+<br />
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/city-dark.png" />
+    <img src="./assets/headings/city-light.png" alt="My contribution city" height="23" />
+  </picture>
+</div>
 
 <div align="center">
   <img src="./profile-3d-contrib/profile-customize.svg" width="90%" alt="3D contribution calendar" />
@@ -85,9 +109,14 @@
   <img src="https://github-profile-trophy.vercel.app/?username=nidheerakesh&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="Trophies" />
 </div>
 
-<img src="./assets/divider_banner.png" width="100%" alt="" />
+<br />
 
-<h2 align="center">✿ DSA & CP ✿</h2>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/dsa-dark.png" />
+    <img src="./assets/headings/dsa-light.png" alt="DSA and CP" height="23" />
+  </picture>
+</div>
 
 <div align="center">
   <a href="https://leetcode.com/nidhirakesh05" target="_blank">
@@ -118,9 +147,14 @@
   </a>
 </div>
 
-<img src="./assets/divider_banner.png" width="100%" alt="" />
+<br />
 
-<h2 align="center">✿ THINGS I'VE BUILT ✿</h2>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/built-dark.png" />
+    <img src="./assets/headings/built-light.png" alt="Things I've built" height="23" />
+  </picture>
+</div>
 
 <!-- PROJECTS:START -->
 <div align="center">
@@ -153,9 +187,14 @@
 </div>
 <!-- PROJECTS:END -->
 
-<img src="./assets/divider_banner.png" width="100%" alt="" />
+<br />
 
-<h2 align="center">✿ SAY HELLO ✿</h2>
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/hello-dark.png" />
+    <img src="./assets/headings/hello-light.png" alt="Say hello" height="23" />
+  </picture>
+</div>
 
 <div align="center">
   <a href="https://www.linkedin.com/in/nidhi-rakesh-677a28311" target="_blank">
