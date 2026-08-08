@@ -1,0 +1,59 @@
+name: refresh profile
+
+on:
+  schedule:
+    - cron: "30 0 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # 3D isometric contribution city, in the pastel palette.
+      - name: Generate contribution city
+        continue-on-error: true
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/data/3d-contrib-settings.json
+
+      # If the custom settings were rejected, fall back to the stock renderer so
+      # the README never points at a missing file.
+      - name: Fall back to default contribution city
+        if: hashFiles('profile-3d-contrib/profile-customize.svg') == ''
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Use default render as the custom file
+        if: hashFiles('profile-3d-contrib/profile-customize.svg') == ''
+        run: cp profile-3d-contrib/profile-season.svg profile-3d-contrib/profile-customize.svg
+
+      - name: Build Codolio card
+        run: python3 .github/scripts/codolio_card.py
+
+      - name: Refresh projects showcase
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/projects.py
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "chore: refresh profile stats"
+          git push
