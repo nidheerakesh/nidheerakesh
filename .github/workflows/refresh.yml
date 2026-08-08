@@ -48,8 +48,21 @@ jobs:
             echo "::warning::no contribution city was generated; keeping the previous SVG"
           fi
 
-      - name: Build Codolio card
-        run: python3 .github/scripts/codolio_card.py
+      - name: Build DSA & CP card
+        run: python3 .github/scripts/stats_card.py
+
+      # The runner can reach dsastats; this sandbox could not. Logs whether the
+      # third-party Codolio card in the README is actually serving an image.
+      - name: Probe dsastats Codolio card
+        continue-on-error: true
+        run: |
+          code=$(curl -s -o /tmp/dsastats.out -w '%{http_code}' --max-time 20 \
+            https://dsastats.vercel.app/api/codolio/nidhirakesh05 || echo 000)
+          echo "dsastats HTTP $code"
+          head -c 300 /tmp/dsastats.out || true
+          if [ "$code" != "200" ]; then
+            echo "::warning::dsastats returned $code — the Codolio card in the README may be broken; remove it if so"
+          fi
 
       - name: Refresh projects showcase
         env:

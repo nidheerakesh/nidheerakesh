@@ -96,7 +96,12 @@
   <br />
   <br />
   <a href="https://codolio.com/profile/nidhirakesh05" target="_blank">
-    <img src="./assets/codolio-card.svg" alt="Codolio stats" />
+    <img src="./assets/dsa-card.svg" alt="DSA and CP stats" />
+  </a>
+  <br />
+  <br />
+  <a href="https://codolio.com/profile/nidhirakesh05" target="_blank">
+    <img src="https://dsastats.vercel.app/api/codolio/nidhirakesh05" alt="Codolio DSA stats" />
   </a>
   <br />
   <br />
