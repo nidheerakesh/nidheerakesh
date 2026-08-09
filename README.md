@@ -88,8 +88,12 @@
 </div>
 
 <div align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=nidheerakesh&show_icons=true&include_all_commits=true&rank_icon=github&hide_title=true&bg_color=FDF6EC&title_color=5F78A7&text_color=8B5E4B&icon_color=FFB6C1&border_color=FFD9E0&border_radius=14" alt="GitHub stats" />
+  <img height="170" src="./assets/github-card.svg" alt="GitHub stats" />
   <img height="170" src="https://streak-stats.demolab.com/?user=nidheerakesh&background=FDF6EC&border=FFD9E0&stroke=FFD9E0&ring=FFB6C1&fire=FFB6C1&currStreakNum=5F78A7&sideNums=5F78A7&currStreakLabel=8B5E4B&sideLabels=8B5E4B&dates=8B5E4B&border_radius=14" alt="Contribution streak" />
+</div>
+
+<div align="center">
+  <img src="./assets/langs-card.svg" alt="Top languages" />
 </div>
 
 <br />
@@ -103,10 +107,6 @@
 
 <div align="center">
   <img src="./profile-3d-contrib/profile-customize.svg" width="90%" alt="3D contribution calendar" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=nidheerakesh&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" alt="Trophies" />
 </div>
 
 <br />
@@ -126,11 +126,6 @@
   <br />
   <a href="https://codolio.com/profile/nidhirakesh05" target="_blank">
     <img src="./assets/dsa-card.svg" alt="DSA and CP stats" />
-  </a>
-  <br />
-  <br />
-  <a href="https://codolio.com/profile/nidhirakesh05" target="_blank">
-    <img src="https://dsastats.vercel.app/api/codolio/nidhirakesh05" alt="Codolio DSA stats" />
   </a>
   <br />
   <br />
@@ -161,26 +156,26 @@
   <table>
     <tr>
       <td>
-      <a href="https://github.com/nidheerakesh/FoundIt">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=nidheerakesh&repo=FoundIt&bg_color=FDF6EC&title_color=5F78A7&text_color=8B5E4B&icon_color=FFB6C1&border_color=FFD9E0&border_radius=14" alt="FoundIt" />
-      </a>
+        <a href="https://github.com/nidheerakesh/FoundIt">
+          <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
+        </a>
       </td>
       <td>
-      <a href="https://github.com/nidheerakesh/portfolio">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=nidheerakesh&repo=portfolio&bg_color=FDF6EC&title_color=5F78A7&text_color=8B5E4B&icon_color=FFB6C1&border_color=FFD9E0&border_radius=14" alt="portfolio" />
-      </a>
+        <a href="https://github.com/nidheerakesh/portfolio">
+          <img src="./assets/projects/portfolio.svg" alt="portfolio" />
+        </a>
       </td>
     </tr>
     <tr>
       <td>
-      <a href="https://github.com/nidheerakesh/Cybershield">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=nidheerakesh&repo=Cybershield&bg_color=FDF6EC&title_color=5F78A7&text_color=8B5E4B&icon_color=FFB6C1&border_color=FFD9E0&border_radius=14" alt="Cybershield" />
-      </a>
+        <a href="https://github.com/nidheerakesh/Cybershield">
+          <img src="./assets/projects/Cybershield.svg" alt="Cybershield" />
+        </a>
       </td>
       <td>
-      <a href="https://github.com/nidheerakesh/crypto-graph">
-        <img src="https://github-readme-stats.vercel.app/api/pin/?username=nidheerakesh&repo=crypto-graph&bg_color=FDF6EC&title_color=5F78A7&text_color=8B5E4B&icon_color=FFB6C1&border_color=FFD9E0&border_radius=14" alt="crypto-graph" />
-      </a>
+        <a href="https://github.com/nidheerakesh/crypto-graph">
+          <img src="./assets/projects/crypto-graph.svg" alt="crypto-graph" />
+        </a>
       </td>
     </tr>
   </table>
