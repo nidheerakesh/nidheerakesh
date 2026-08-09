@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="460" height="180" viewBox="0 0 460 180" role="img" aria-label="languages">
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="210" viewBox="0 0 460 210" role="img" aria-label="languages">
   <style>
     .t { font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; }
     .s { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: #8B5E4B; opacity: .75; }
@@ -10,11 +10,34 @@
     .val { font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; text-anchor: end; }
     .pill { font: 500 10px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; text-anchor: middle; }
   </style>
-  <rect x="1" y="1" width="458" height="178" rx="14" fill="#FDF6EC" stroke="#FFD9E0" stroke-width="2"/>
+  <rect x="1" y="1" width="458" height="208" rx="14" fill="#FDF6EC" stroke="#FFD9E0" stroke-width="2"/>
   <circle cx="34" cy="34" r="6" fill="#FFB6C1"/>
   <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
   <text x="70" y="39" class="t">languages</text>
   <text x="426" y="39" class="s" text-anchor="end">@nidheerakesh</text>
-  <rect x="34" y="78" width="392" height="16" rx="8" fill="#E7EEF8"/>
-  <text x="34" y="132" class="s">no language data yet</text>
+  <rect x="34" y="78" width="360" height="16" fill="#FFB6C1"/>
+  <rect x="394" y="78" width="25" height="16" fill="#B8CAE8"/>
+  <rect x="419" y="78" width="4" height="16" fill="#E6E6FA"/>
+  <rect x="423" y="78" width="3" height="16" fill="#F7C9A8"/>
+  <rect x="426" y="78" width="0" height="16" fill="#C7E3D4"/>
+  <rect x="426" y="78" width="0" height="16" fill="#D9C2E9"/>
+  <rect x="34" y="78" width="392" height="16" rx="8" fill="none" stroke="#FDF6EC" stroke-width="2"/>
+  <circle cx="39" cy="124" r="5" fill="#FFB6C1"/>
+  <text x="52" y="128" class="lbl">Python</text>
+  <text x="204" y="128" class="val">91.8%</text>
+  <circle cx="239" cy="124" r="5" fill="#B8CAE8"/>
+  <text x="252" y="128" class="lbl">TypeScript</text>
+  <text x="404" y="128" class="val">6.4%</text>
+  <circle cx="39" cy="150" r="5" fill="#E6E6FA"/>
+  <text x="52" y="154" class="lbl">JavaScript</text>
+  <text x="204" y="154" class="val">0.9%</text>
+  <circle cx="239" cy="150" r="5" fill="#F7C9A8"/>
+  <text x="252" y="154" class="lbl">CSS</text>
+  <text x="404" y="154" class="val">0.5%</text>
+  <circle cx="39" cy="176" r="5" fill="#C7E3D4"/>
+  <text x="52" y="180" class="lbl">HTML</text>
+  <text x="204" y="180" class="val">0.2%</text>
+  <circle cx="239" cy="176" r="5" fill="#D9C2E9"/>
+  <text x="252" y="180" class="lbl">Rust</text>
+  <text x="404" y="180" class="val">0.1%</text>
 </svg>

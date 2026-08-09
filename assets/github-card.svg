@@ -15,19 +15,19 @@
   <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
   <text x="70" y="39" class="t">github</text>
   <text x="426" y="39" class="s" text-anchor="end">@nidheerakesh</text>
-  <text x="34" y="96" class="big" opacity=".35">—</text>
+  <text x="34" y="96" class="big">208</text>
   <text x="34" y="112" class="cap">CONTRIBUTIONS THIS YEAR</text>
   <line x1="34" y1="130" x2="426" y2="130" stroke="#FFD9E0" stroke-width="1"/>
-  <text x="100" y="166" class="mid" opacity=".35">—</text>
+  <text x="100" y="166" class="mid">185</text>
   <text x="100" y="182" class="capm">COMMITS</text>
-  <text x="230" y="166" class="mid" opacity=".35">—</text>
+  <text x="230" y="166" class="mid">5</text>
   <text x="230" y="182" class="capm">PULL REQUESTS</text>
-  <text x="360" y="166" class="mid" opacity=".35">—</text>
+  <text x="360" y="166" class="mid">0</text>
   <text x="360" y="182" class="capm">ISSUES</text>
-  <text x="100" y="222" class="mid" opacity=".35">—</text>
+  <text x="100" y="222" class="mid">0</text>
   <text x="100" y="238" class="capm">STARS EARNED</text>
-  <text x="230" y="222" class="mid" opacity=".35">—</text>
+  <text x="230" y="222" class="mid">13</text>
   <text x="230" y="238" class="capm">REPOSITORIES</text>
-  <text x="360" y="222" class="mid" opacity=".35">—</text>
+  <text x="360" y="222" class="mid">1</text>
   <text x="360" y="238" class="capm">FOLLOWERS</text>
 </svg>
