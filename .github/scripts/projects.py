@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Refresh the projects showcase in README.md.
 
-Picks the top public repos (stars first, most recently pushed to break ties)
-and rewrites the block between the PROJECTS markers with themed pin cards.
-On any fetch failure the README is left exactly as it is.
+Picks the top public repos (stars first, most recently pushed to break ties),
+renders a card SVG per repo into assets/projects/, and rewrites the block
+between the PROJECTS markers to point at them. The cards are committed rather
+than fetched from an image service, because the service this replaced was
+permanently over quota.
+
+On any fetch failure the README and the existing cards are left as they are.
 
 Usage:
   projects.py                 # fetch from the GitHub API
@@ -18,17 +22,33 @@ import sys
 import urllib.error
 import urllib.request
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from card import (  # noqa: E402
+    BROWN, INK, PALE, PINK, PINK_SOFT, RAMP,
+    esc, frame, truncate, wrap,
+)
+
 USER = "nidheerakesh"
 COUNT = 4
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
+CARDS = ROOT / "assets" / "projects"
 START = "<!-- PROJECTS:START -->"
 END = "<!-- PROJECTS:END -->"
 
-CARD_PARAMS = (
-    "bg_color=FDF6EC&title_color=5F78A7&text_color=8B5E4B"
-    "&icon_color=FFB6C1&border_color=FFD9E0&border_radius=14"
-)
+CARD_WIDTH, CARD_HEIGHT = 400, 150
+
+# Stable colour per language so a repo keeps its accent across refreshes.
+LANGUAGE_COLORS = {
+    "Python": PINK,
+    "TypeScript": "#B8CAE8",
+    "JavaScript": "#F7C9A8",
+    "CSS": "#D9C2E9",
+    "HTML": "#C7E3D4",
+    "Java": "#E6E6FA",
+    "Shell": "#C7E3D4",
+    "C++": "#B8CAE8",
+}
 
 
 def fetch_repos():
@@ -58,20 +78,51 @@ def pick(repos):
     return eligible[:COUNT]
 
 
-def card(repo):
+def render_card(repo):
     name = repo["name"]
-    src = f"https://github-readme-stats.vercel.app/api/pin/?username={USER}&repo={name}&{CARD_PARAMS}"
-    return (
-        f'      <a href="https://github.com/{USER}/{name}">\n'
-        f'        <img src="{src}" alt="{name}" />\n'
-        f"      </a>\n"
+    language = repo.get("language")
+    accent = LANGUAGE_COLORS.get(language, RAMP[len(name) % len(RAMP)])
+    description = repo.get("description") or "No description yet."
+
+    body = ""
+    y = 76
+    for line in wrap(description, 44, 2):
+        body += f'  <text x="34" y="{y}" class="s">{esc(line)}</text>\n'
+        y += 17
+
+    footer = CARD_HEIGHT - 26
+    body += f'  <circle cx="39" cy="{footer - 4}" r="5" fill="{accent}"/>\n'
+    body += (
+        f'  <text x="52" y="{footer}" class="s">'
+        f'{esc(language or "—")}</text>\n'
+    )
+    body += (
+        f'  <text x="{CARD_WIDTH - 34}" y="{footer}" class="s" text-anchor="end">'
+        f'{repo.get("stargazers_count", 0)} stars · {repo.get("forks_count", 0)} forks</text>\n'
     )
 
+    return frame(CARD_WIDTH, CARD_HEIGHT, truncate(name, 24), "", body)
 
-def render(repos):
+
+def write_cards(repos):
+    CARDS.mkdir(parents=True, exist_ok=True)
+    keep = set()
+    for repo in repos:
+        path = CARDS / f"{repo['name']}.svg"
+        path.write_text(render_card(repo))
+        keep.add(path.name)
+
+    # Drop cards for repos that dropped out of the top four.
+    for stale in CARDS.glob("*.svg"):
+        if stale.name not in keep:
+            stale.unlink()
+            print(f"removed stale card {stale.name}")
+
+
+def render_block(repos):
     if not repos:
         return (
-            "<p align=\"center\">\n"
+            '<p align="center">\n'
             "  <em>No public projects to show yet — this refreshes itself.</em>\n"
             "</p>\n"
         )
@@ -79,9 +130,14 @@ def render(repos):
     for index, repo in enumerate(repos):
         if index and index % 2 == 0:
             lines.append("    </tr>\n    <tr>\n")
-        lines.append("      <td>\n")
-        lines.append(card(repo))
-        lines.append("      </td>\n")
+        name = repo["name"]
+        lines.append(
+            f"      <td>\n"
+            f'        <a href="https://github.com/{USER}/{name}">\n'
+            f'          <img src="./assets/projects/{name}.svg" alt="{esc(name)}" />\n'
+            f"        </a>\n"
+            f"      </td>\n"
+        )
     lines.append("    </tr>\n  </table>\n</div>\n")
     return "".join(lines)
 
@@ -103,6 +159,7 @@ def main():
 
     picked = pick(repos)
     print("featuring: " + (", ".join(r["name"] for r in picked) or "(none)"))
+    write_cards(picked)
 
     text = README.read_text()
     pattern = re.compile(re.escape(START) + r".*?" + re.escape(END), re.DOTALL)
@@ -110,7 +167,7 @@ def main():
         print(f"markers {START} / {END} not found in README; nothing to do")
         return 0
 
-    README.write_text(pattern.sub(f"{START}\n{render(picked)}{END}", text))
+    README.write_text(pattern.sub(f"{START}\n{render_block(picked)}{END}", text))
     print("README projects block updated")
     return 0
 

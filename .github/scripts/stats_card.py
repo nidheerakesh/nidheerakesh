@@ -15,6 +15,12 @@ import urllib.error
 import urllib.request
 from datetime import date
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from card import (  # noqa: E402
+    BROWN, CREAM, INK, LAVENDER, PALE, PINK, PINK_SOFT, UA,
+    dim, esc, num,
+)
+
 LEETCODE = "nidhirakesh05"
 CODEFORCES = "nidhirakesh05"
 CODECHEF = "nidhirakesh05"
@@ -22,16 +28,6 @@ CODECHEF = "nidhirakesh05"
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 CACHE = ROOT / ".github" / "data" / "stats.json"
 OUT = ROOT / "assets" / "dsa-card.svg"
-
-UA = "Mozilla/5.0 (compatible; profile-readme-card/1.0; +https://github.com/nidheerakesh)"
-
-CREAM = "#FDF6EC"
-PINK = "#FFB6C1"
-PINK_SOFT = "#FFD9E0"
-LAVENDER = "#E6E6FA"
-INK = "#5F78A7"
-PALE = "#E7EEF8"
-BROWN = "#8B5E4B"
 
 ROW_COLORS = {"LeetCode": PINK, "Codeforces": "#B8CAE8", "CodeChef": LAVENDER}
 
@@ -174,25 +170,6 @@ PLATFORMS = [
 
 
 # ----------------------------------------------------------------------- render
-
-
-def num(value):
-    return "—" if value is None else f"{value:,}"
-
-
-def dim(value):
-    """Mute unknown values so a placeholder never reads as a broken render."""
-    return ' opacity=".35"' if value is None else ""
-
-
-def esc(text):
-    return (
-        str(text)
-        .replace("&", "&amp;")
-        .replace("<", "&lt;")
-        .replace(">", "&gt;")
-        .replace('"', "&quot;")
-    )
 
 
 def pill_text(stats):
