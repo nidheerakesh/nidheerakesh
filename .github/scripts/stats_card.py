@@ -128,9 +128,12 @@ def fetch_codeforces():
 CODECHEF_PATTERNS = {
     "rating": [r'class="rating-number"[^>]*>\s*(\d{3,4})'],
     "stars": [r'class="rating"[^>]*>\s*(\d)\s*&#9733;', r'class="rating"[^>]*>\s*(\d)\s*★'],
+    # Only explicitly labelled totals. A looser "Problems Solved ... (\d+)"
+    # pattern was matching some other number on the page and reported 779 for
+    # an account with 33 LeetCode solves, so an unrecognised layout must yield
+    # None (a muted row) rather than a number that cannot be stood behind.
     "solved": [
         r"Total Problems Solved:\s*(?:<[^>]*>\s*)*(\d+)",
-        r"Problems Solved\s*(?:<[^>]*>\s*)*(\d+)",
         r'"problemsSolved"\s*:\s*(\d+)',
     ],
 }
