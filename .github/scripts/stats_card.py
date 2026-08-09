@@ -128,10 +128,12 @@ def fetch_codeforces():
 CODECHEF_PATTERNS = {
     "rating": [r'class="rating-number"[^>]*>\s*(\d{3,4})'],
     "stars": [r'class="rating"[^>]*>\s*(\d)\s*&#9733;', r'class="rating"[^>]*>\s*(\d)\s*★'],
-    # Only explicitly labelled totals. A looser "Problems Solved ... (\d+)"
-    # pattern was matching some other number on the page and reported 779 for
-    # an account with 33 LeetCode solves, so an unrecognised layout must yield
-    # None (a muted row) rather than a number that cannot be stood behind.
+    # Only explicitly labelled totals, so an unrecognised layout yields None
+    # (a muted row) rather than whatever digits happen to sit near the words
+    # "Problems Solved". The dropped loose pattern was a latent hazard, not an
+    # observed one: the live value is unchanged without it, because CodeChef
+    # really does report this account's total in a labelled field. CodeChef
+    # counts practice submissions, so its total runs far ahead of the others.
     "solved": [
         r"Total Problems Solved:\s*(?:<[^>]*>\s*)*(\d+)",
         r'"problemsSolved"\s*:\s*(\d+)',
