@@ -8,15 +8,15 @@
     "maxRating": 632,
     "note": "newbie",
     "rating": 632,
-    "solved": 16
+    "solved": 17
   },
   "LeetCode": {
     "contests": null,
-    "easy": 19,
+    "easy": 23,
     "hard": 2,
-    "medium": 16,
+    "medium": 18,
     "note": null,
     "rating": null,
-    "solved": 37
+    "solved": 43
   }
 }
