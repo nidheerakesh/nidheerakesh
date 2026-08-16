@@ -156,25 +156,25 @@
   <table>
     <tr>
       <td>
-        <a href="https://github.com/nidheerakesh/FoundIt">
-          <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
+        <a href="https://github.com/nidheerakesh/loom">
+          <img src="./assets/projects/loom.svg" alt="loom" />
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/portfolio">
-          <img src="./assets/projects/portfolio.svg" alt="portfolio" />
+        <a href="https://github.com/nidheerakesh/FoundIt">
+          <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
         </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/nidheerakesh/Cybershield">
-          <img src="./assets/projects/Cybershield.svg" alt="Cybershield" />
+        <a href="https://github.com/nidheerakesh/portfolio">
+          <img src="./assets/projects/portfolio.svg" alt="portfolio" />
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/crypto-graph">
-          <img src="./assets/projects/crypto-graph.svg" alt="crypto-graph" />
+        <a href="https://github.com/nidheerakesh/Cybershield">
+          <img src="./assets/projects/Cybershield.svg" alt="Cybershield" />
         </a>
       </td>
     </tr>
