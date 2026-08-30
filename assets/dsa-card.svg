@@ -15,7 +15,7 @@
   <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
   <text x="70" y="39" class="t">dsa &amp; cp</text>
   <text x="426" y="39" class="s" text-anchor="end">@nidhirakesh05</text>
-  <text x="34" y="92" class="big">847</text>
+  <text x="34" y="92" class="big">850</text>
   <text x="34" y="107" class="cap">TOTAL SOLVED</text>
   <text x="300" y="88" class="mid" opacity=".35">—</text>
   <text x="300" y="104" class="capm">CONTESTS</text>
@@ -35,8 +35,8 @@
     <circle cx="40" cy="183" r="4" fill="#B8CAE8"/>
     <text x="52" y="187" class="lbl">Codeforces</text>
     <rect x="130" y="176" width="140" height="14" rx="7" fill="#E7EEF8"/>
-    <rect x="130" y="176" width="4" height="14" rx="7" fill="#B8CAE8"/>
-    <text x="306" y="187" class="val">25</text>
+    <rect x="130" y="176" width="5" height="14" rx="7" fill="#B8CAE8"/>
+    <text x="306" y="187" class="val">28</text>
     <rect x="320" y="175" width="106" height="16" rx="8" fill="#E7EEF8"/>
     <text x="373" y="187" class="pill">632 · newbie</text>
   </g>
@@ -50,5 +50,5 @@
     <text x="373" y="223" class="pill">1096</text>
   </g>
   <text x="34" y="254" class="s">leetcode · 23 easy · 18 medium · 2 hard</text>
-  <text x="426" y="254" class="s" text-anchor="end">synced 2026-08-29</text>
+  <text x="426" y="254" class="s" text-anchor="end">synced 2026-08-30</text>
 </svg>
