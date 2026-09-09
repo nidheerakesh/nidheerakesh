@@ -24,10 +24,10 @@
   <rect x="34" y="78" width="392" height="16" rx="8" fill="none" stroke="#FDF6EC" stroke-width="2"/>
   <circle cx="39" cy="124" r="5" fill="#FFB6C1"/>
   <text x="52" y="128" class="lbl">Python</text>
-  <text x="204" y="128" class="val">89.6%</text>
+  <text x="204" y="128" class="val">89.5%</text>
   <circle cx="239" cy="124" r="5" fill="#B8CAE8"/>
   <text x="252" y="128" class="lbl">TypeScript</text>
-  <text x="404" y="128" class="val">8.6%</text>
+  <text x="404" y="128" class="val">8.8%</text>
   <circle cx="39" cy="150" r="5" fill="#E6E6FA"/>
   <text x="52" y="154" class="lbl">JavaScript</text>
   <text x="204" y="154" class="val">0.9%</text>
