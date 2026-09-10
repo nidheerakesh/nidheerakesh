@@ -15,19 +15,19 @@
   <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
   <text x="70" y="39" class="t">languages</text>
   <text x="426" y="39" class="s" text-anchor="end">@nidheerakesh</text>
-  <rect x="34" y="78" width="351" height="16" fill="#FFB6C1"/>
-  <rect x="385" y="78" width="34" height="16" fill="#B8CAE8"/>
-  <rect x="419" y="78" width="3" height="16" fill="#E6E6FA"/>
-  <rect x="422" y="78" width="3" height="16" fill="#F7C9A8"/>
-  <rect x="425" y="78" width="1" height="16" fill="#C7E3D4"/>
+  <rect x="34" y="78" width="349" height="16" fill="#FFB6C1"/>
+  <rect x="383" y="78" width="36" height="16" fill="#B8CAE8"/>
+  <rect x="419" y="78" width="4" height="16" fill="#E6E6FA"/>
+  <rect x="423" y="78" width="3" height="16" fill="#F7C9A8"/>
+  <rect x="426" y="78" width="0" height="16" fill="#C7E3D4"/>
   <rect x="426" y="78" width="0" height="16" fill="#D9C2E9"/>
   <rect x="34" y="78" width="392" height="16" rx="8" fill="none" stroke="#FDF6EC" stroke-width="2"/>
   <circle cx="39" cy="124" r="5" fill="#FFB6C1"/>
   <text x="52" y="128" class="lbl">Python</text>
-  <text x="204" y="128" class="val">89.5%</text>
+  <text x="204" y="128" class="val">88.9%</text>
   <circle cx="239" cy="124" r="5" fill="#B8CAE8"/>
   <text x="252" y="128" class="lbl">TypeScript</text>
-  <text x="404" y="128" class="val">8.8%</text>
+  <text x="404" y="128" class="val">9.2%</text>
   <circle cx="39" cy="150" r="5" fill="#E6E6FA"/>
   <text x="52" y="154" class="lbl">JavaScript</text>
   <text x="204" y="154" class="val">0.9%</text>
