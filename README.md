@@ -161,20 +161,20 @@
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/FoundIt">
-          <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
+        <a href="https://github.com/nidheerakesh/AEON">
+          <img src="./assets/projects/AEON.svg" alt="AEON" />
         </a>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/nidheerakesh/sentinelgraph">
-          <img src="./assets/projects/sentinelgraph.svg" alt="sentinelgraph" />
+        <a href="https://github.com/nidheerakesh/FoundIt">
+          <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/portfolio">
-          <img src="./assets/projects/portfolio.svg" alt="portfolio" />
+        <a href="https://github.com/nidheerakesh/sentinelgraph">
+          <img src="./assets/projects/sentinelgraph.svg" alt="sentinelgraph" />
         </a>
       </td>
     </tr>
