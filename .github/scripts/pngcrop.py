@@ -131,7 +131,7 @@ def crop_to_content(data, padding=4):
         right = max(right, row_right)
 
     if top is None:
-        raise ValueError("image is fully transparent — nothing was rendered")
+        raise ValueError("image is fully transparent; nothing was rendered")
 
     left = max(0, left - padding)
     right = min(width - 1, right + padding)

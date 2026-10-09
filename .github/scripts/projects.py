@@ -124,7 +124,7 @@ def render_block(repos):
     if not repos:
         return (
             '<p align="center">\n'
-            "  <em>No public projects to show yet — this refreshes itself.</em>\n"
+            "  <em>No public projects to show yet. This refreshes itself.</em>\n"
             "</p>\n"
         )
     lines = ['<div align="center">\n  <table>\n    <tr>\n']

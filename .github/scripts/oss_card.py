@@ -128,7 +128,7 @@ def main():
         try:
             stats = fetch(token)
             live = True
-            print(f"open source: ok — {stats}")
+            print(f"open source: ok, {stats}")
         except Exception as exc:  # a failed card must not fail the workflow
             print(f"open source: failed ({type(exc).__name__}: {exc})")
 

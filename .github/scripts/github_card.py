@@ -276,7 +276,7 @@ def main():
         try:
             stats = fetch(token)
             live = True
-            print(f"github: ok — {stats}")
+            print(f"github: ok, {stats}")
         except Exception as exc:  # a failed card must not fail the workflow
             print(f"github: failed ({type(exc).__name__}: {exc})")
 

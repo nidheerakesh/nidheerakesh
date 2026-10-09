@@ -7,7 +7,7 @@
 
 <p align="center">
   Computer science undergrad at IIIT Kottayam. Most of my time goes to AI and machine<br />
-  learning — LLM applications and healthcare AI especially — with regular detours into<br />
+  learning, especially LLM applications and healthcare AI, with regular detours into<br />
   full stack and cloud. I like problems where the hard part is the thinking.
 </p>
 
@@ -21,9 +21,9 @@
 </div>
 
 <p align="center">
-  <b>building</b> — LLM applications and healthcare AI<br />
-  <b>learning</b> — full stack development and cloud<br />
-  <b>open to</b> — internships and collaborations
+  <b>building:</b> LLM applications and healthcare AI<br />
+  <b>learning:</b> full stack development and cloud<br />
+  <b>open to:</b> internships and collaborations
 </p>
 
 <br />

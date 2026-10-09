@@ -233,7 +233,7 @@ def render(all_stats, stale, theme="light"):
         y += 36
 
     note = (
-        "showing last known values — a platform lookup failed"
+        "showing last known values; a platform lookup failed"
         if stale
         else f"synced {date.today().isoformat()}"
     )
@@ -284,7 +284,7 @@ def main():
     for name, fetch in PLATFORMS:
         try:
             fresh[name] = fetch()
-            print(f"{name}: ok — {fresh[name]}")
+            print(f"{name}: ok, {fresh[name]}")
         except Exception as exc:  # any platform failure is survivable
             print(f"{name}: failed ({type(exc).__name__}: {exc})")
             if isinstance(cached.get(name), dict):
