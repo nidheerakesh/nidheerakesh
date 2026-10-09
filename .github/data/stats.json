@@ -5,18 +5,18 @@
     "solved": 779
   },
   "Codeforces": {
-    "maxRating": 632,
+    "maxRating": 865,
     "note": "newbie",
-    "rating": 632,
-    "solved": 28
+    "rating": 865,
+    "solved": 31
   },
   "LeetCode": {
     "contests": null,
-    "easy": 23,
+    "easy": 24,
     "hard": 2,
-    "medium": 18,
+    "medium": 21,
     "note": null,
     "rating": null,
-    "solved": 43
+    "solved": 47
   }
 }

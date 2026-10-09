@@ -16,10 +16,11 @@
   <text x="70" y="39" class="t">streak</text>
   <text x="426" y="39" class="s" text-anchor="end">@nidheerakesh</text>
   <circle cx="230" cy="100" r="34" fill="none" stroke="#E7EEF8" stroke-width="6"/>
-  <text x="92" y="104" class="mid" opacity=".35">—</text>
+  <circle cx="230" cy="100" r="34" fill="none" stroke="#FFB6C1" stroke-width="6" stroke-linecap="round" stroke-dasharray="106.8 213.6" transform="rotate(-90 230 100)"/>
+  <text x="92" y="104" class="mid">6</text>
   <text x="92" y="120" class="capm">LONGEST STREAK</text>
-  <text x="230" y="104" class="mid" opacity=".35">—</text>
+  <text x="230" y="104" class="mid">3</text>
   <text x="230" y="146" class="capm">CURRENT STREAK</text>
-  <text x="368" y="104" class="mid">494</text>
+  <text x="368" y="104" class="mid">516</text>
   <text x="368" y="120" class="capm">THIS YEAR</text>
 </svg>

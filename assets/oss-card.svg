@@ -15,26 +15,26 @@
   <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
   <text x="70" y="39" class="t">open source</text>
   <text x="426" y="39" class="s" text-anchor="end">@nidheerakesh</text>
-  <text x="34" y="96" class="big">6</text>
+  <text x="34" y="96" class="big">4</text>
   <text x="34" y="112" class="cap">PULL REQUESTS MERGED</text>
-  <text x="300" y="88" class="mid">9</text>
+  <text x="300" y="88" class="mid">7</text>
   <text x="300" y="104" class="capm">OPENED</text>
-  <text x="392" y="88" class="mid">7</text>
+  <text x="392" y="88" class="mid">6</text>
   <text x="392" y="104" class="capm">PROJECTS</text>
   <line x1="34" y1="130" x2="426" y2="130" stroke="#FFD9E0" stroke-width="1"/>
   <circle cx="39" cy="154" r="5" fill="#FFB6C1"/>
   <text x="52" y="158" class="lbl">tqec/tqec</text>
   <text x="426" y="158" class="val">2 merged</text>
   <circle cx="39" cy="180" r="5" fill="#B8CAE8"/>
-  <text x="52" y="184" class="lbl">moneytosms/godseye</text>
-  <text x="426" y="184" class="val">2 merged</text>
+  <text x="52" y="184" class="lbl">qutip/qutip</text>
+  <text x="426" y="184" class="val">1 merged</text>
   <circle cx="39" cy="206" r="5" fill="#E6E6FA"/>
-  <text x="52" y="210" class="lbl">qutip/qutip</text>
+  <text x="52" y="210" class="lbl">moneytosms/croniter-rs</text>
   <text x="426" y="210" class="val">1 merged</text>
   <circle cx="39" cy="232" r="5" fill="#F7C9A8"/>
-  <text x="52" y="236" class="lbl">moneytosms/croniter-rs</text>
-  <text x="426" y="236" class="val">1 merged</text>
+  <text x="52" y="236" class="lbl">quantumlib/Cirq</text>
+  <text x="426" y="236" class="val">1 open</text>
   <circle cx="39" cy="258" r="5" fill="#C7E3D4"/>
-  <text x="52" y="262" class="lbl">quantumlib/Cirq</text>
+  <text x="52" y="262" class="lbl">Deltakit/deltakit</text>
   <text x="426" y="262" class="val">1 open</text>
 </svg>

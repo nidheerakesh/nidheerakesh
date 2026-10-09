@@ -1,18 +1,20 @@
 {
-  "commits": 454,
-  "contributions": 494,
+  "commits": 458,
+  "contributions": 516,
   "followers": 1,
-  "issues": 0,
-  "languages": {
-    "CSS": 86493,
-    "HTML": 52384,
-    "JavaScript": 701561,
-    "Python": 14108596,
-    "Rust": 18087,
-    "TypeScript": 1596529
+  "issues": 5,
+  "language_repos": {
+    "CSS": 10,
+    "HTML": 12,
+    "JavaScript": 8,
+    "Python": 8,
+    "Shell": 4,
+    "TypeScript": 7
   },
-  "prs": 18,
+  "longest_streak": 6,
+  "prs": 26,
   "repos": 15,
   "reviews": 0,
-  "stars": 2
+  "stars": 2,
+  "streak": 3
 }

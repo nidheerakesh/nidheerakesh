@@ -1,12 +1,32 @@
 {
-  "merged": 6,
-  "prs": 9,
-  "repos": 7,
+  "merged": 4,
+  "prs": 7,
+  "repos": 6,
   "top": [
-    {"repo": "tqec/tqec", "prs": 2, "merged": 2},
-    {"repo": "moneytosms/godseye", "prs": 2, "merged": 2},
-    {"repo": "qutip/qutip", "prs": 1, "merged": 1},
-    {"repo": "moneytosms/croniter-rs", "prs": 1, "merged": 1},
-    {"repo": "quantumlib/Cirq", "prs": 1, "merged": 0}
+    {
+      "merged": 2,
+      "prs": 2,
+      "repo": "tqec/tqec"
+    },
+    {
+      "merged": 1,
+      "prs": 1,
+      "repo": "qutip/qutip"
+    },
+    {
+      "merged": 1,
+      "prs": 1,
+      "repo": "moneytosms/croniter-rs"
+    },
+    {
+      "merged": 0,
+      "prs": 1,
+      "repo": "quantumlib/Cirq"
+    },
+    {
+      "merged": 0,
+      "prs": 1,
+      "repo": "Deltakit/deltakit"
+    }
   ]
 }
