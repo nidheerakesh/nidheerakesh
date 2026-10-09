@@ -46,7 +46,6 @@ query profile($login: String!) {
       totalCount
       nodes {
         stargazerCount
-        forkCount
         languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
           edges { size node { name } }
         }
@@ -107,14 +106,7 @@ def fetch(token):
         for name in seen:
             language_repos[name] = language_repos.get(name, 0) + 1
 
-    calendar = contributions["contributionCalendar"]
-    current, longest = streaks(calendar)
-    days = [
-        {"d": day["date"], "c": day["contributionCount"]}
-        for week in calendar.get("weeks", [])
-        for day in week.get("contributionDays", [])
-    ]
-    days.sort(key=lambda day: day["d"])
+    current, longest = streaks(contributions["contributionCalendar"])
 
     return {
         "contributions": contributions["contributionCalendar"]["totalContributions"],
@@ -123,12 +115,10 @@ def fetch(token):
         "issues": contributions["totalIssueContributions"],
         "reviews": contributions["totalPullRequestReviewContributions"],
         "stars": sum(r.get("stargazerCount", 0) for r in repos),
-        "forks": sum(r.get("forkCount", 0) for r in repos),
         "repos": user["repositories"]["totalCount"],
         "followers": user["followers"]["totalCount"],
         "streak": current,
         "longest_streak": longest,
-        "calendar": days,
         "language_repos": dict(
             sorted(language_repos.items(), key=lambda kv: kv[1], reverse=True)[:TOP_LANGS]
         ),

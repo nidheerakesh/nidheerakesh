@@ -117,10 +117,7 @@
 </div>
 
 <div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/city-card-dark.svg" />
-    <img src="./assets/city-card.svg" alt="Isometric contribution calendar" />
-  </picture>
+  <img src="./profile-3d-contrib/profile-customize.svg" width="90%" alt="3D contribution calendar" />
 </div>
 
 <br />

@@ -214,70 +214,11 @@ def test_helpers():
     check("dim mutes only unknowns", card.dim(None) and not card.dim(0))
 
 
-def test_city():
-    print("\nContribution city (city_card.py)")
-    m = load("city_card")
-
-    def days(counts):
-        return [{"d": f"2026-01-{i + 1:02d}", "c": c} for i, c in enumerate(counts)]
-
-    # The whole point: leading empty weeks are dropped so the city looks full.
-    trimmed = m.trim(days([0] * 14 + [3] + [1] * 20))
-    check("trim drops empty leading weeks", len(trimmed) == 21, str(len(trimmed)))
-    check("trim starts on a week boundary", trimmed[0]["c"] == 3, str(trimmed[0]))
-    check("trim keeps everything when day one is active",
-          len(m.trim(days([5] + [0] * 20))) == 21)
-    check("trim survives a calendar with no activity",
-          len(m.trim(days([0] * 200))) == 84, str(len(m.trim(days([0] * 200)))))
-
-    # The real calendar that defeated the first attempt: a single contribution
-    # in week one, then months of nothing, then the actual work. Dropping only
-    # leading *empty* weeks keeps the whole year and the bare grid with it.
-    sparse_start = [3] + [0] * 202 + [2] * 154
-    kept = m.trim(days(sparse_start))
-    check("trim skips a sparse run-up, not just empty weeks",
-          len(kept) < 200, f"kept {len(kept) // 7} of {len(sparse_start) // 7} weeks")
-    check("trim keeps the busy tail intact",
-          sum(1 for d in kept if d["c"]) >= 150,
-          f"{sum(1 for d in kept if d['c'])} active days kept")
-    # A genuinely busy year should not be cropped.
-    check("trim keeps a dense year whole",
-          len(m.trim(days([1] * 371))) == 371, str(len(m.trim(days([1] * 371)))))
-
-    check("level 0 for no contributions", m.level(0, 20) == 0)
-    check("level tops out at 4", m.level(20, 20) == 4)
-    check("a single contribution is never invisible", m.level(1, 20) >= 1)
-    check("level handles a flat peak", m.level(1, 1) == 4)
-    check("shade darkens", m.shade("#FFFFFF", 0.5) == "#7F7F7F", m.shade("#FFFFFF", 0.5))
-
-    stats = {
-        "calendar": days([0] * 70 + [i % 9 for i in range(120)]),
-        "contributions": 400, "stars": 2, "forks": 1,
-        "language_repos": {"Python": 5, "TypeScript": 3},
-    }
-    import re
-    for theme in ("light", "dark"):
-        svg = m.render(stats, theme)
-        xml.dom.minidom.parseString(svg)
-        width = int(re.search(r'width="(\d+)"', svg).group(1))
-        check(f"{theme} city is wide enough for its footer",
-              width >= m.MIN_WIDTH, f"{width} < {m.MIN_WIDTH}")
-        check(f"{theme} city stays within the max width", width <= m.MAX_WIDTH, str(width))
-    check("city dark has no cream",
-          card.THEMES["light"]["bg"] not in m.render(stats, "dark"))
-    # An account with nothing at all must still produce a valid card.
-    xml.dom.minidom.parseString(m.render(
-        {"calendar": days([0] * 100), "contributions": 0, "stars": 0,
-         "forks": 0, "language_repos": {}}, "light"))
-    check("empty account still renders", True)
-
-
 def main():
     test_helpers()
     test_dsa()
     test_github()
     test_oss()
-    test_city()
     print()
     if failures:
         print(f"{len(failures)} failure(s):")
