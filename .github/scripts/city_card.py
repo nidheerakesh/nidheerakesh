@@ -34,6 +34,8 @@ PAD = 34
 ROWS = 7  # days per week
 MAX_BAR = 46  # tallest column, in pixels
 FOOTER = 92  # room under the grid for the donut and totals
+DENSITY = 0.7  # a window is "full" when this share of weeks has activity
+MIN_WEEKS = 12  # never shrink below this, even for a quiet account
 
 # Four intensity steps, as GitHub's calendar uses, lightest first.
 LEVELS = {
@@ -53,12 +55,33 @@ def shade(hex_color, factor):
 
 
 def trim(days):
-    """Drop leading days before the first contribution, then align to a week."""
-    first = next((i for i, day in enumerate(days) if day["c"] > 0), None)
-    if first is None:
-        return days[-7 * 12 :]  # nothing yet: show the last twelve weeks
-    # Step back to the start of that week so columns stay whole.
-    return days[first - (first % ROWS) :]
+    """Pick the longest recent window that still looks busy.
+
+    Dropping only leading *empty* weeks is not enough: a single contribution in
+    week one followed by months of nothing keeps the whole year in frame, which
+    is the bare-grid look this card exists to avoid. So take the earliest start
+    whose remaining weeks are at least DENSITY active, which keeps as much
+    history as possible without the sparse run-up.
+    """
+    weeks = [days[i : i + ROWS] for i in range(0, len(days), ROWS)]
+    totals = [sum(day["c"] for day in week) for week in weeks]
+    if not any(totals):
+        return days[-ROWS * MIN_WEEKS :]  # nothing yet: show a short window
+
+    start = None
+    for candidate in range(len(totals)):
+        window = totals[candidate:]
+        if len(window) < MIN_WEEKS:
+            break
+        if sum(1 for total in window if total) / len(window) >= DENSITY:
+            start = candidate
+            break
+    if start is None:
+        start = max(0, len(totals) - MIN_WEEKS)
+
+    while start < len(totals) - 1 and not totals[start]:
+        start += 1  # never open on an empty week
+    return [day for week in weeks[start:] for day in week]
 
 
 def level(count, peak):

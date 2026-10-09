@@ -230,6 +230,20 @@ def test_city():
     check("trim survives a calendar with no activity",
           len(m.trim(days([0] * 200))) == 84, str(len(m.trim(days([0] * 200)))))
 
+    # The real calendar that defeated the first attempt: a single contribution
+    # in week one, then months of nothing, then the actual work. Dropping only
+    # leading *empty* weeks keeps the whole year and the bare grid with it.
+    sparse_start = [3] + [0] * 202 + [2] * 154
+    kept = m.trim(days(sparse_start))
+    check("trim skips a sparse run-up, not just empty weeks",
+          len(kept) < 200, f"kept {len(kept) // 7} of {len(sparse_start) // 7} weeks")
+    check("trim keeps the busy tail intact",
+          sum(1 for d in kept if d["c"]) >= 150,
+          f"{sum(1 for d in kept if d['c'])} active days kept")
+    # A genuinely busy year should not be cropped.
+    check("trim keeps a dense year whole",
+          len(m.trim(days([1] * 371))) == 371, str(len(m.trim(days([1] * 371)))))
+
     check("level 0 for no contributions", m.level(0, 20) == 0)
     check("level tops out at 4", m.level(20, 20) == 4)
     check("a single contribution is never invisible", m.level(1, 20) >= 1)
