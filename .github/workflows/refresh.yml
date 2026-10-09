@@ -20,10 +20,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Fixture tests for the card generators. They need no network, so a
+      # regression here surfaces even when an upstream API is down.
+      - name: Test card generators
+        run: python3 .github/scripts/test_cards.py
+
       # 3D isometric contribution city, in the pastel palette.
       - name: Generate contribution city
         continue-on-error: true
-        uses: yoshi389111/github-profile-3d-contrib@latest
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -34,7 +39,7 @@ jobs:
       - name: Fall back to default contribution city
         if: hashFiles('profile-3d-contrib/profile-customize.svg') == ''
         continue-on-error: true
-        uses: yoshi389111/github-profile-3d-contrib@latest
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
@@ -55,6 +60,11 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 .github/scripts/github_card.py
+
+      - name: Build open source card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 .github/scripts/oss_card.py
 
       - name: Refresh projects showcase
         env:

@@ -15,8 +15,8 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from card import (  # noqa: E402
-    BROWN, CREAM, INK, PALE, PINK, PINK_SOFT, RAMP,
-    dim, esc, frame, graphql, num, truncate,
+    PINK, RAMP, THEMES,
+    dim, esc, frame, graphql, num, truncate, write_themed,
 )
 
 USER = "nidheerakesh"
@@ -24,6 +24,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 CACHE = ROOT / ".github" / "data" / "github.json"
 STATS_OUT = ROOT / "assets" / "github-card.svg"
 LANGS_OUT = ROOT / "assets" / "langs-card.svg"
+STREAK_OUT = ROOT / "assets" / "streak-card.svg"
 
 TOP_LANGS = 6
 
@@ -36,7 +37,10 @@ query profile($login: String!) {
       totalPullRequestContributions
       totalIssueContributions
       totalPullRequestReviewContributions
-      contributionCalendar { totalContributions }
+      contributionCalendar {
+        totalContributions
+        weeks { contributionDays { date contributionCount } }
+      }
     }
     repositories(ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC, first: 100) {
       totalCount
@@ -52,6 +56,35 @@ query profile($login: String!) {
 """
 
 
+def streaks(calendar):
+    """Current and longest run of consecutive days with contributions.
+
+    Days arrive oldest first. The most recent day is skipped when it is empty,
+    because the day is not over yet and counting it would reset a live streak.
+    """
+    days = [
+        day
+        for week in calendar.get("weeks", [])
+        for day in week.get("contributionDays", [])
+    ]
+    days.sort(key=lambda d: d["date"])
+    counts = [d["contributionCount"] for d in days]
+
+    longest = run = 0
+    for count in counts:
+        run = run + 1 if count else 0
+        longest = max(longest, run)
+
+    tail = counts[:-1] if counts and not counts[-1] else counts
+    current = 0
+    for count in reversed(tail):
+        if not count:
+            break
+        current += 1
+
+    return current, longest
+
+
 def fetch(token):
     data = graphql(QUERY, {"login": USER}, token)
     user = data.get("user")
@@ -61,11 +94,19 @@ def fetch(token):
     contributions = user["contributionsCollection"]
     repos = user["repositories"]["nodes"] or []
 
-    languages = {}
+    # Weighted by how many repositories use each language, not by bytes. Byte
+    # weighting let one repo with a committed dataset read as 91.8% Python,
+    # which described that repo's contents rather than how the work is spread.
+    language_repos = {}
     for repo in repos:
-        for edge in (repo.get("languages") or {}).get("edges") or []:
-            name = edge["node"]["name"]
-            languages[name] = languages.get(name, 0) + edge["size"]
+        seen = {
+            edge["node"]["name"]
+            for edge in (repo.get("languages") or {}).get("edges") or []
+        }
+        for name in seen:
+            language_repos[name] = language_repos.get(name, 0) + 1
+
+    current, longest = streaks(contributions["contributionCalendar"])
 
     return {
         "contributions": contributions["contributionCalendar"]["totalContributions"],
@@ -76,8 +117,10 @@ def fetch(token):
         "stars": sum(r.get("stargazerCount", 0) for r in repos),
         "repos": user["repositories"]["totalCount"],
         "followers": user["followers"]["totalCount"],
-        "languages": dict(
-            sorted(languages.items(), key=lambda kv: kv[1], reverse=True)[:TOP_LANGS]
+        "streak": current,
+        "longest_streak": longest,
+        "language_repos": dict(
+            sorted(language_repos.items(), key=lambda kv: kv[1], reverse=True)[:TOP_LANGS]
         ),
     }
 
@@ -85,7 +128,7 @@ def fetch(token):
 # ----------------------------------------------------------------------- render
 
 
-def render_stats(stats):
+def render_stats(stats, theme="light"):
     """Hero contribution count, then two rows of three supporting numbers."""
     cells = [
         ("commits", "COMMITS"),
@@ -96,11 +139,12 @@ def render_stats(stats):
         ("followers", "FOLLOWERS"),
     ]
 
+    palette = THEMES[theme]
     body = (
         f'  <text x="34" y="96" class="big"{dim(stats.get("contributions"))}>'
         f'{num(stats.get("contributions"))}</text>\n'
         f'  <text x="34" y="112" class="cap">CONTRIBUTIONS THIS YEAR</text>\n'
-        f'  <line x1="34" y1="130" x2="426" y2="130" stroke="{PINK_SOFT}" stroke-width="1"/>\n'
+        f'  <line x1="34" y1="130" x2="426" y2="130" stroke="{palette["border"]}" stroke-width="1"/>\n'
     )
 
     for index, (key, label) in enumerate(cells):
@@ -113,11 +157,12 @@ def render_stats(stats):
             f'  <text x="{x}" y="{y + 16}" class="capm">{label}</text>\n'
         )
 
-    return frame(460, 262, "github", f"@{USER}", body)
+    return frame(460, 262, "github", f"@{USER}", body, theme)
 
 
-def render_langs(languages):
+def render_langs(languages, theme="light"):
     """One stacked proportional bar, then a two-column legend."""
+    palette = THEMES[theme]
     total = sum(languages.values()) if languages else 0
     bar_x, bar_width, bar_y = 34, 392, 78
 
@@ -141,12 +186,12 @@ def render_langs(languages):
         # Rounded ends without clipping the segments.
         body += (
             f'  <rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="16" rx="8" '
-            f'fill="none" stroke="{CREAM}" stroke-width="2"/>\n'
+            f'fill="none" stroke="{palette["bg"]}" stroke-width="2"/>\n'
         )
     else:
         body += (
             f'  <rect x="{bar_x}" y="{bar_y}" width="{bar_width}" height="16" rx="8" '
-            f'fill="{PALE}"/>\n'
+            f'fill="{palette["pale"]}"/>\n'
         )
 
     y = 128
@@ -166,7 +211,49 @@ def render_langs(languages):
         body += f'  <text x="34" y="132" class="s">no language data yet</text>\n'
         y = 132
 
-    return frame(460, max(y + 30, 180), "languages", f"@{USER}", body)
+    return frame(460, max(y + 30, 180), "languages", f"@{USER}", body, theme)
+
+
+def render_streak(stats, theme="light"):
+    """Longest streak, current streak in a ring, total contributions.
+
+    Replaces streak-stats.demolab.com. The numbers come from the contribution
+    calendar already fetched for the stats card, so this costs no extra call
+    and removes the last external image service from the README.
+    """
+    palette = THEMES[theme]
+    current = stats.get("streak")
+    longest = stats.get("longest_streak")
+
+    # Ring around the middle figure, filled in proportion to the personal best.
+    circumference = 2 * 3.14159 * 34
+    filled = (
+        round(circumference * min(1.0, current / longest), 1)
+        if current and longest
+        else 0
+    )
+    body = (
+        f'  <circle cx="230" cy="100" r="34" fill="none" stroke="{palette["pale"]}" stroke-width="6"/>\n'
+    )
+    if filled:
+        body += (
+            f'  <circle cx="230" cy="100" r="34" fill="none" stroke="{PINK}" stroke-width="6"'
+            f' stroke-linecap="round" stroke-dasharray="{filled} {round(circumference, 1)}"'
+            f' transform="rotate(-90 230 100)"/>\n'
+        )
+
+    for x, key, label in (
+        (92, "longest_streak", "LONGEST STREAK"),
+        (230, "streak", "CURRENT STREAK"),
+        (368, "contributions", "THIS YEAR"),
+    ):
+        value = stats.get(key)
+        body += (
+            f'  <text x="{x}" y="104" class="mid"{dim(value)}>{num(value)}</text>\n'
+            f'  <text x="{x}" y="{146 if x == 230 else 120}" class="capm">{label}</text>\n'
+        )
+
+    return frame(460, 172, "streak", f"@{USER}", body, theme)
 
 
 # ------------------------------------------------------------------------- main
@@ -201,9 +288,15 @@ def main():
         CACHE.write_text(json.dumps(stats, indent=2, sort_keys=True) + "\n")
 
     STATS_OUT.parent.mkdir(parents=True, exist_ok=True)
-    STATS_OUT.write_text(render_stats(stats))
-    LANGS_OUT.write_text(render_langs(stats.get("languages") or {}))
-    print(f"wrote {STATS_OUT.name} and {LANGS_OUT.name} (live={live})")
+    write_themed(lambda theme: render_stats(stats, theme), STATS_OUT)
+    write_themed(
+        lambda theme: render_langs(stats.get("language_repos") or {}, theme), LANGS_OUT
+    )
+    write_themed(lambda theme: render_streak(stats, theme), STREAK_OUT)
+    print(
+        f"wrote {STATS_OUT.name}, {LANGS_OUT.name} and {STREAK_OUT.name} "
+        f"(plus dark variants, live={live})"
+    )
     return 0
 
 

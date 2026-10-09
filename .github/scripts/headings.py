@@ -36,6 +36,7 @@ HEADINGS = {
     "tools": "TOOLS AND TECH",
     "stats": "GITHUB STATS",
     "city": "MY CONTRIBUTION CITY",
+    "oss": "OPEN SOURCE",
     "dsa": "DSA AND CP",
     "built": "THINGS I'VE BUILT",
     "hello": "SAY HELLO",

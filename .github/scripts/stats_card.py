@@ -17,8 +17,8 @@ from datetime import date
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from card import (  # noqa: E402
-    BROWN, CREAM, INK, LAVENDER, PALE, PINK, PINK_SOFT, UA,
-    dim, esc, num,
+    LAVENDER, PINK, THEMES, UA,
+    dim, esc, num, style, write_themed,
 )
 
 LEETCODE = "nidhirakesh05"
@@ -189,7 +189,8 @@ def pill_text(stats):
     return "unrated"
 
 
-def render(all_stats, stale):
+def render(all_stats, stale, theme="light"):
+    palette = THEMES[theme]
     solved = {name: all_stats.get(name, {}).get("solved") for name, _ in PLATFORMS}
     known = [v for v in solved.values() if isinstance(v, int)]
     total = sum(known) if known else None
@@ -217,7 +218,7 @@ def render(all_stats, stale):
             f'  <g{muted}>\n'
             f'    <circle cx="40" cy="{y + 7}" r="4" fill="{ROW_COLORS[name]}"/>\n'
             f'    <text x="52" y="{y + 11}" class="lbl">{name}</text>\n'
-            f'    <rect x="130" y="{y}" width="140" height="14" rx="7" fill="{PALE}"/>\n'
+            f'    <rect x="130" y="{y}" width="140" height="14" rx="7" fill="{palette["pale"]}"/>\n'
             + (
                 f'    <rect x="130" y="{y}" width="{width}" height="14" rx="7" '
                 f'fill="{ROW_COLORS[name]}"/>\n'
@@ -225,7 +226,7 @@ def render(all_stats, stale):
                 else ""
             )
             + f'    <text x="306" y="{y + 11}" class="val"{dim(count)}>{num(count)}</text>\n'
-            f'    <rect x="320" y="{y - 1}" width="106" height="16" rx="8" fill="{PALE}"/>\n'
+            f'    <rect x="320" y="{y - 1}" width="106" height="16" rx="8" fill="{palette["pale"]}"/>\n'
             f'    <text x="373" y="{y + 11}" class="pill">{esc(pill_text(stats))}</text>\n'
             f'  </g>\n'
         )
@@ -245,17 +246,9 @@ def render(all_stats, stale):
 
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="460" height="272" viewBox="0 0 460 272" role="img" aria-label="DSA and competitive programming stats">
   <style>
-    .t {{ font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; }}
-    .s {{ font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; opacity: .75; }}
-    .big {{ font: 700 38px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; }}
-    .mid {{ font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; text-anchor: middle; }}
-    .cap {{ font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; opacity: .7; letter-spacing: .8px; }}
-    .capm {{ font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; opacity: .7; letter-spacing: .8px; text-anchor: middle; }}
-    .lbl {{ font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; }}
-    .val {{ font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; text-anchor: end; }}
-    .pill {{ font: 500 10px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; text-anchor: middle; }}
+{style(theme)}
   </style>
-  <rect x="1" y="1" width="458" height="270" rx="14" fill="{CREAM}" stroke="{PINK_SOFT}" stroke-width="2"/>
+  <rect x="1" y="1" width="458" height="270" rx="14" fill="{palette['bg']}" stroke="{palette['border']}" stroke-width="2"/>
   <circle cx="34" cy="34" r="6" fill="{PINK}"/>
   <circle cx="50" cy="34" r="6" fill="{LAVENDER}"/>
   <text x="70" y="39" class="t">dsa &amp; cp</text>
@@ -266,7 +259,7 @@ def render(all_stats, stale):
   <text x="300" y="104" class="capm">CONTESTS</text>
   <text x="392" y="88" class="mid"{dim(best)}>{num(best)}</text>
   <text x="392" y="104" class="capm">BEST RATING</text>
-  <line x1="34" y1="124" x2="426" y2="124" stroke="{PINK_SOFT}" stroke-width="1"/>
+  <line x1="34" y1="124" x2="426" y2="124" stroke="{palette['border']}" stroke-width="1"/>
 {''.join(rows)}  <text x="34" y="254" class="s">{esc(breakdown)}</text>
   <text x="426" y="254" class="s" text-anchor="end">{esc(note)}</text>
 </svg>
@@ -304,8 +297,8 @@ def main():
         CACHE.write_text(json.dumps(fresh, indent=2, sort_keys=True) + "\n")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(render(fresh, stale))
-    print(f"wrote {OUT.relative_to(ROOT)} ({len(fresh)}/{len(PLATFORMS)} platforms)")
+    write_themed(lambda theme: render(fresh, stale, theme), OUT)
+    print(f"wrote {OUT.name} and its dark variant ({len(fresh)}/{len(PLATFORMS)} platforms)")
     return 0
 
 

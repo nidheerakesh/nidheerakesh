@@ -1,16 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="460" height="272" viewBox="0 0 460 272" role="img" aria-label="DSA and competitive programming stats">
   <style>
-    .t { font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; }
-    .s { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: #8B5E4B; opacity: .75; }
-    .big { font: 700 38px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; }
-    .mid { font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; text-anchor: middle; }
-    .cap { font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: #8B5E4B; opacity: .7; letter-spacing: .8px; }
-    .capm { font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: #8B5E4B; opacity: .7; letter-spacing: .8px; text-anchor: middle; }
-    .lbl { font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: #8B5E4B; }
-    .val { font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; text-anchor: end; }
-    .pill { font: 500 10px 'Segoe UI', Ubuntu, sans-serif; fill: #5F78A7; text-anchor: middle; }
+    .t { font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; }
+    .s { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; opacity: .75; }
+    .big { font: 700 38px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; }
+    .mid { font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; text-anchor: middle; }
+    .cap { font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; opacity: .7; letter-spacing: .8px; }
+    .capm { font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; opacity: .7; letter-spacing: .8px; text-anchor: middle; }
+    .lbl { font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; }
+    .val { font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; text-anchor: end; }
+    .pill { font: 500 10px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; text-anchor: middle; }
   </style>
-  <rect x="1" y="1" width="458" height="270" rx="14" fill="#FDF6EC" stroke="#FFD9E0" stroke-width="2"/>
+  <rect x="1" y="1" width="458" height="270" rx="14" fill="#1C1A21" stroke="#3B3340" stroke-width="2"/>
   <circle cx="34" cy="34" r="6" fill="#FFB6C1"/>
   <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
   <text x="70" y="39" class="t">dsa &amp; cp</text>
@@ -21,32 +21,32 @@
   <text x="300" y="104" class="capm">CONTESTS</text>
   <text x="392" y="88" class="mid">1,096</text>
   <text x="392" y="104" class="capm">BEST RATING</text>
-  <line x1="34" y1="124" x2="426" y2="124" stroke="#FFD9E0" stroke-width="1"/>
+  <line x1="34" y1="124" x2="426" y2="124" stroke="#3B3340" stroke-width="1"/>
   <g>
     <circle cx="40" cy="147" r="4" fill="#FFB6C1"/>
     <text x="52" y="151" class="lbl">LeetCode</text>
-    <rect x="130" y="140" width="140" height="14" rx="7" fill="#E7EEF8"/>
+    <rect x="130" y="140" width="140" height="14" rx="7" fill="#2B2733"/>
     <rect x="130" y="140" width="8" height="14" rx="7" fill="#FFB6C1"/>
     <text x="306" y="151" class="val">43</text>
-    <rect x="320" y="139" width="106" height="16" rx="8" fill="#E7EEF8"/>
+    <rect x="320" y="139" width="106" height="16" rx="8" fill="#2B2733"/>
     <text x="373" y="151" class="pill">unrated</text>
   </g>
   <g>
     <circle cx="40" cy="183" r="4" fill="#B8CAE8"/>
     <text x="52" y="187" class="lbl">Codeforces</text>
-    <rect x="130" y="176" width="140" height="14" rx="7" fill="#E7EEF8"/>
+    <rect x="130" y="176" width="140" height="14" rx="7" fill="#2B2733"/>
     <rect x="130" y="176" width="5" height="14" rx="7" fill="#B8CAE8"/>
     <text x="306" y="187" class="val">28</text>
-    <rect x="320" y="175" width="106" height="16" rx="8" fill="#E7EEF8"/>
+    <rect x="320" y="175" width="106" height="16" rx="8" fill="#2B2733"/>
     <text x="373" y="187" class="pill">632 · newbie</text>
   </g>
   <g>
     <circle cx="40" cy="219" r="4" fill="#E6E6FA"/>
     <text x="52" y="223" class="lbl">CodeChef</text>
-    <rect x="130" y="212" width="140" height="14" rx="7" fill="#E7EEF8"/>
+    <rect x="130" y="212" width="140" height="14" rx="7" fill="#2B2733"/>
     <rect x="130" y="212" width="140" height="14" rx="7" fill="#E6E6FA"/>
     <text x="306" y="223" class="val">779</text>
-    <rect x="320" y="211" width="106" height="16" rx="8" fill="#E7EEF8"/>
+    <rect x="320" y="211" width="106" height="16" rx="8" fill="#2B2733"/>
     <text x="373" y="223" class="pill">1096</text>
   </g>
   <text x="34" y="254" class="s">leetcode · 23 easy · 18 medium · 2 hard</text>

@@ -1,0 +1,12 @@
+{
+  "merged": 6,
+  "prs": 9,
+  "repos": 7,
+  "top": [
+    {"repo": "tqec/tqec", "prs": 2, "merged": 2},
+    {"repo": "moneytosms/godseye", "prs": 2, "merged": 2},
+    {"repo": "qutip/qutip", "prs": 1, "merged": 1},
+    {"repo": "moneytosms/croniter-rs", "prs": 1, "merged": 1},
+    {"repo": "quantumlib/Cirq", "prs": 1, "merged": 0}
+  ]
+}

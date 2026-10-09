@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="262" viewBox="0 0 460 262" role="img" aria-label="github">
+  <style>
+    .t { font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; }
+    .s { font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; opacity: .75; }
+    .big { font: 700 38px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; }
+    .mid { font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; text-anchor: middle; }
+    .cap { font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; opacity: .7; letter-spacing: .8px; }
+    .capm { font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; opacity: .7; letter-spacing: .8px; text-anchor: middle; }
+    .lbl { font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: #D6CCC3; }
+    .val { font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; text-anchor: end; }
+    .pill { font: 500 10px 'Segoe UI', Ubuntu, sans-serif; fill: #C7D5F0; text-anchor: middle; }
+  </style>
+  <rect x="1" y="1" width="458" height="260" rx="14" fill="#1C1A21" stroke="#3B3340" stroke-width="2"/>
+  <circle cx="34" cy="34" r="6" fill="#FFB6C1"/>
+  <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
+  <text x="70" y="39" class="t">github</text>
+  <text x="426" y="39" class="s" text-anchor="end">@nidheerakesh</text>
+  <text x="34" y="96" class="big">494</text>
+  <text x="34" y="112" class="cap">CONTRIBUTIONS THIS YEAR</text>
+  <line x1="34" y1="130" x2="426" y2="130" stroke="#3B3340" stroke-width="1"/>
+  <text x="100" y="166" class="mid">454</text>
+  <text x="100" y="182" class="capm">COMMITS</text>
+  <text x="230" y="166" class="mid">18</text>
+  <text x="230" y="182" class="capm">PULL REQUESTS</text>
+  <text x="360" y="166" class="mid">0</text>
+  <text x="360" y="182" class="capm">ISSUES</text>
+  <text x="100" y="222" class="mid">2</text>
+  <text x="100" y="238" class="capm">STARS EARNED</text>
+  <text x="230" y="222" class="mid">15</text>
+  <text x="230" y="238" class="capm">REPOSITORIES</text>
+  <text x="360" y="222" class="mid">1</text>
+  <text x="360" y="238" class="capm">FOLLOWERS</text>
+</svg>

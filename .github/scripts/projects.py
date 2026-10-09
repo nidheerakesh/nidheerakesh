@@ -24,8 +24,8 @@ import urllib.request
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from card import (  # noqa: E402
-    BROWN, INK, PALE, PINK, PINK_SOFT, RAMP,
-    esc, frame, truncate, wrap,
+    PINK, RAMP,
+    esc, frame, truncate, wrap, write_themed,
 )
 
 USER = "nidheerakesh"
@@ -78,7 +78,7 @@ def pick(repos):
     return eligible[:COUNT]
 
 
-def render_card(repo):
+def render_card(repo, theme="light"):
     name = repo["name"]
     language = repo.get("language")
     accent = LANGUAGE_COLORS.get(language, RAMP[len(name) % len(RAMP)])
@@ -101,16 +101,17 @@ def render_card(repo):
         f'{repo.get("stargazers_count", 0)} stars · {repo.get("forks_count", 0)} forks</text>\n'
     )
 
-    return frame(CARD_WIDTH, CARD_HEIGHT, truncate(name, 24), "", body)
+    return frame(CARD_WIDTH, CARD_HEIGHT, truncate(name, 24), "", body, theme)
 
 
 def write_cards(repos):
     CARDS.mkdir(parents=True, exist_ok=True)
     keep = set()
     for repo in repos:
-        path = CARDS / f"{repo['name']}.svg"
-        path.write_text(render_card(repo))
-        keep.add(path.name)
+        light, dark = write_themed(
+            lambda theme, r=repo: render_card(r, theme), CARDS / f"{repo['name']}.svg"
+        )
+        keep.update({light.name, dark.name})
 
     # Drop cards for repos that dropped out of the top four.
     for stale in CARDS.glob("*.svg"):
@@ -134,7 +135,10 @@ def render_block(repos):
         lines.append(
             f"      <td>\n"
             f'        <a href="https://github.com/{USER}/{name}">\n'
-            f'          <img src="./assets/projects/{name}.svg" alt="{esc(name)}" />\n'
+            f"          <picture>\n"
+            f'            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/{name}-dark.svg" />\n'
+            f'            <img src="./assets/projects/{name}.svg" alt="{esc(name)}" />\n'
+            f"          </picture>\n"
             f"        </a>\n"
             f"      </td>\n"
         )

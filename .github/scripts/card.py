@@ -19,20 +19,45 @@ PALE = "#E7EEF8"
 BROWN = "#8B5E4B"
 
 # Colour ramp for anything needing several distinguishable pastels (languages,
-# platform rows). Ordered so neighbours stay distinguishable.
+# platform rows). Ordered so neighbours stay distinguishable. The pastels carry
+# enough chroma to read on both backgrounds, so the ramp is shared by themes.
 RAMP = [PINK, "#B8CAE8", LAVENDER, "#F7C9A8", "#C7E3D4", "#D9C2E9"]
+
+# Each card is rendered once per theme and selected in the README with
+# <picture> + prefers-color-scheme, because an SVG served through GitHub's
+# image proxy cannot react to the reader's theme on its own.
+THEMES = {
+    "light": {
+        "bg": CREAM,
+        "border": PINK_SOFT,
+        "ink": INK,
+        "text": BROWN,
+        "pale": PALE,
+    },
+    "dark": {
+        "bg": "#1C1A21",
+        "border": "#3B3340",
+        "ink": "#C7D5F0",
+        "text": "#D6CCC3",
+        "pale": "#2B2733",
+    },
+}
 
 UA = "Mozilla/5.0 (compatible; profile-readme-card/1.0; +https://github.com/nidheerakesh)"
 
-STYLE = f"""    .t {{ font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; }}
-    .s {{ font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; opacity: .75; }}
-    .big {{ font: 700 38px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; }}
-    .mid {{ font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; text-anchor: middle; }}
-    .cap {{ font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; opacity: .7; letter-spacing: .8px; }}
-    .capm {{ font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; opacity: .7; letter-spacing: .8px; text-anchor: middle; }}
-    .lbl {{ font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: {BROWN}; }}
-    .val {{ font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; text-anchor: end; }}
-    .pill {{ font: 500 10px 'Segoe UI', Ubuntu, sans-serif; fill: {INK}; text-anchor: middle; }}"""
+
+def style(theme="light"):
+    palette = THEMES[theme]
+    ink, text = palette["ink"], palette["text"]
+    return f"""    .t {{ font: 600 17px 'Segoe UI', Ubuntu, sans-serif; fill: {ink}; }}
+    .s {{ font: 400 11px 'Segoe UI', Ubuntu, sans-serif; fill: {text}; opacity: .75; }}
+    .big {{ font: 700 38px 'Segoe UI', Ubuntu, sans-serif; fill: {ink}; }}
+    .mid {{ font: 700 20px 'Segoe UI', Ubuntu, sans-serif; fill: {ink}; text-anchor: middle; }}
+    .cap {{ font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: {text}; opacity: .7; letter-spacing: .8px; }}
+    .capm {{ font: 400 9px 'Segoe UI', Ubuntu, sans-serif; fill: {text}; opacity: .7; letter-spacing: .8px; text-anchor: middle; }}
+    .lbl {{ font: 500 12px 'Segoe UI', Ubuntu, sans-serif; fill: {text}; }}
+    .val {{ font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: {ink}; text-anchor: end; }}
+    .pill {{ font: 500 10px 'Segoe UI', Ubuntu, sans-serif; fill: {ink}; text-anchor: middle; }}"""
 
 
 def num(value):
@@ -80,19 +105,33 @@ def wrap(text, limit, lines):
     return out
 
 
-def frame(width, height, title, subtitle="", body=""):
-    """Open a card: rounded cream panel, pink border, two header dots, title."""
+def frame(width, height, title, subtitle="", body="", theme="light"):
+    """Open a card: rounded panel, soft border, two header dots, title."""
+    palette = THEMES[theme]
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{esc(title)}">
   <style>
-{STYLE}
+{style(theme)}
   </style>
-  <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="14" fill="{CREAM}" stroke="{PINK_SOFT}" stroke-width="2"/>
+  <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="14" fill="{palette['bg']}" stroke="{palette['border']}" stroke-width="2"/>
   <circle cx="34" cy="34" r="6" fill="{PINK}"/>
   <circle cx="50" cy="34" r="6" fill="{LAVENDER}"/>
   <text x="70" y="39" class="t">{esc(title)}</text>
   <text x="{width - 34}" y="39" class="s" text-anchor="end">{esc(subtitle)}</text>
 {body}</svg>
 """
+
+
+def write_themed(render, path):
+    """Write `render(theme)` to path.svg and path-dark.svg.
+
+    `path` is the light variant; the dark sibling gets a -dark suffix, which is
+    what the README's <picture> blocks point at.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(render("light"))
+    dark = path.with_name(f"{path.stem}-dark{path.suffix}")
+    dark.write_text(render("dark"))
+    return path, dark
 
 
 def http_json(url, data=None, headers=None, token=None, timeout=20):
