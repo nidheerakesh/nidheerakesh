@@ -88,12 +88,23 @@
 </div>
 
 <div align="center">
-  <img height="170" src="./assets/github-card.svg" alt="GitHub stats" />
-  <img height="170" src="https://streak-stats.demolab.com/?user=nidheerakesh&background=FDF6EC&border=FFD9E0&stroke=FFD9E0&ring=FFB6C1&fire=FFB6C1&currStreakNum=5F78A7&sideNums=5F78A7&currStreakLabel=8B5E4B&sideLabels=8B5E4B&dates=8B5E4B&border_radius=14" alt="Contribution streak" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-card-dark.svg" />
+    <img src="./assets/github-card.svg" alt="GitHub stats" />
+  </picture>
+  <br />
+  <br />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/streak-card-dark.svg" />
+    <img src="./assets/streak-card.svg" alt="Contribution streak" />
+  </picture>
 </div>
 
 <div align="center">
-  <img src="./assets/langs-card.svg" alt="Top languages" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/langs-card-dark.svg" />
+    <img src="./assets/langs-card.svg" alt="Top languages" />
+  </picture>
 </div>
 
 <br />
@@ -113,19 +124,33 @@
 
 <div align="center">
   <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/oss-dark.png" />
+    <img src="./assets/headings/oss-light.png" alt="Open source" height="23" />
+  </picture>
+</div>
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/oss-card-dark.svg" />
+    <img src="./assets/oss-card.svg" alt="Open source contributions" />
+  </picture>
+</div>
+
+<br />
+
+<div align="center">
+  <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/dsa-dark.png" />
     <img src="./assets/headings/dsa-light.png" alt="DSA and CP" height="23" />
   </picture>
 </div>
 
 <div align="center">
-  <a href="https://leetcode.com/nidhirakesh05" target="_blank">
-    <img src="https://leetcard.jacoblin.cool/nidhirakesh05?ext=activity&border=0&radius=12&colors=E7EEF8,5F78A7,5F78A7,B8CAE8,B8CAE8,D7E4F5,FFFFFF,5F78A7" alt="LeetCode stats" />
-  </a>
-  <br />
-  <br />
   <a href="https://codolio.com/profile/nidhirakesh05" target="_blank">
-    <img src="./assets/dsa-card.svg" alt="DSA and CP stats" />
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/dsa-card-dark.svg" />
+      <img src="./assets/dsa-card.svg" alt="DSA and CP stats" />
+    </picture>
   </a>
   <br />
   <br />
@@ -157,24 +182,36 @@
     <tr>
       <td>
         <a href="https://github.com/nidheerakesh/loom">
-          <img src="./assets/projects/loom.svg" alt="loom" />
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/loom-dark.svg" />
+            <img src="./assets/projects/loom.svg" alt="loom" />
+          </picture>
         </a>
       </td>
       <td>
         <a href="https://github.com/nidheerakesh/AEON">
-          <img src="./assets/projects/AEON.svg" alt="AEON" />
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/AEON-dark.svg" />
+            <img src="./assets/projects/AEON.svg" alt="AEON" />
+          </picture>
         </a>
       </td>
     </tr>
     <tr>
       <td>
         <a href="https://github.com/nidheerakesh/FoundIt">
-          <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/FoundIt-dark.svg" />
+            <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
+          </picture>
         </a>
       </td>
       <td>
         <a href="https://github.com/nidheerakesh/Cybershield">
-          <img src="./assets/projects/Cybershield.svg" alt="Cybershield" />
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/Cybershield-dark.svg" />
+            <img src="./assets/projects/Cybershield.svg" alt="Cybershield" />
+          </picture>
         </a>
       </td>
     </tr>
