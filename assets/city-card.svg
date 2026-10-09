@@ -272,9 +272,9 @@
   <path d="M580 356 L560 366 L560 392 L580 382 Z" fill="#DBA7B2"/>
   <path d="M560 346 L580 356 L560 366 L540 356 Z" fill="#FFC3D0"/>
   <path d="M500 382 L520 392 L500 402 L480 392 Z" fill="#F0E7DA" stroke="#FDF6EC" stroke-width=".5"/>
-  <path d="M520 385 L540 395 L540 402 L520 392 Z" fill="#B7A1A7"/>
-  <path d="M560 385 L540 395 L540 402 L560 392 Z" fill="#DBC0C7"/>
-  <path d="M540 375 L560 385 L540 395 L520 385 Z" fill="#FFE0E8"/>
+  <path d="M520 383 L540 393 L540 402 L520 392 Z" fill="#B7A1A7"/>
+  <path d="M560 383 L540 393 L540 402 L560 392 Z" fill="#DBC0C7"/>
+  <path d="M540 373 L560 383 L540 393 L520 383 Z" fill="#FFE0E8"/>
   <circle cx="88" cy="454" r="32" fill="none" stroke="#E7EEF8" stroke-width="14"/>
   <circle cx="88" cy="454" r="32" fill="none" stroke="#FFB6C1" stroke-width="14" stroke-dasharray="41.0 160.0" stroke-dashoffset="-0.0" transform="rotate(-90 88 454)"/>
   <circle cx="88" cy="454" r="32" fill="none" stroke="#B8CAE8" stroke-width="14" stroke-dasharray="49.2 151.8" stroke-dashoffset="-41.0" transform="rotate(-90 88 454)"/>
@@ -288,7 +288,7 @@
   <circle cx="265" cy="426" r="4" fill="#F7C9A8"/><text x="276" y="430" class="s">Python</text>
   <circle cx="265" cy="443" r="4" fill="#C7E3D4"/><text x="276" y="447" class="s">Shell</text>
   <circle cx="265" cy="460" r="4" fill="#D9C2E9"/><text x="276" y="464" class="s">TypeScript</text>
-  <text x="706" y="466" class="val" font-size="15">517</text>
+  <text x="706" y="466" class="val" font-size="15">518</text>
   <text x="706" y="482" class="cap" text-anchor="end">CONTRIBUTIONS</text>
   <text x="556" y="466" class="val" font-size="15">2</text>
   <text x="556" y="482" class="cap" text-anchor="end">STARS</text>
