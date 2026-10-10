@@ -1,5 +1,5 @@
 {
-  "merged": 4,
+  "merged": 5,
   "prs": 7,
   "repos": 6,
   "top": [
@@ -7,6 +7,11 @@
       "merged": 2,
       "prs": 2,
       "repo": "tqec/tqec"
+    },
+    {
+      "merged": 1,
+      "prs": 1,
+      "repo": "Deltakit/deltakit"
     },
     {
       "merged": 1,
@@ -22,11 +27,6 @@
       "merged": 0,
       "prs": 1,
       "repo": "quantumlib/Cirq"
-    },
-    {
-      "merged": 0,
-      "prs": 1,
-      "repo": "Deltakit/deltakit"
     }
   ]
 }
