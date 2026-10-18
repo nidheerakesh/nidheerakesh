@@ -199,18 +199,18 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/nidheerakesh/APKSentinel">
+        <a href="https://github.com/nidheerakesh/koode">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/APKSentinel-dark.svg" />
-            <img src="./assets/projects/APKSentinel.svg" alt="APKSentinel" />
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/koode-dark.svg" />
+            <img src="./assets/projects/koode.svg" alt="koode" />
           </picture>
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/FoundIt">
+        <a href="https://github.com/nidheerakesh/APKSentinel">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/FoundIt-dark.svg" />
-            <img src="./assets/projects/FoundIt.svg" alt="FoundIt" />
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/APKSentinel-dark.svg" />
+            <img src="./assets/projects/APKSentinel.svg" alt="APKSentinel" />
           </picture>
         </a>
       </td>
