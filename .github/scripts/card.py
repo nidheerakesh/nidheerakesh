@@ -35,11 +35,12 @@ THEMES = {
         "pale": PALE,
     },
     "dark": {
-        "bg": "#1C1A21",
-        "border": "#3B3340",
-        "ink": "#C7D5F0",
-        "text": "#D6CCC3",
-        "pale": "#2B2733",
+        "bg": "#0D1117",
+        "border": "#30363D",
+        "ink": "#E6EDF3",
+        "text": "#8B949E",
+        "pale": "#21262D",
+        "accent": "#7EE787",
     },
 }
 
@@ -114,7 +115,7 @@ def frame(width, height, title, subtitle="", body="", theme="light"):
   </style>
   <rect x="1" y="1" width="{width - 2}" height="{height - 2}" rx="14" fill="{palette['bg']}" stroke="{palette['border']}" stroke-width="2"/>
   <circle cx="34" cy="34" r="6" fill="{PINK}"/>
-  <circle cx="50" cy="34" r="6" fill="{LAVENDER}"/>
+  <circle cx="50" cy="34" r="6" fill="{palette.get('accent', LAVENDER)}"/>
   <text x="70" y="39" class="t">{esc(title)}</text>
   <text x="{width - 34}" y="39" class="s" text-anchor="end">{esc(subtitle)}</text>
 {body}</svg>

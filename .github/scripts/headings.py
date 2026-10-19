@@ -24,8 +24,8 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 FONT = ROOT / "assets" / "fonts" / "PixelifySans-Medium.ttf"
 OUT = ROOT / "assets" / "headings"
 
-# Ink on light backgrounds, soft pink on dark -- both sit on transparent.
-VARIANTS = {"light": "#5F78A7", "dark": "#FFB6C1"}
+# Ink on light backgrounds, near-white on the developer dark theme. Both sit on transparent.
+VARIANTS = {"light": "#5F78A7", "dark": "#E6EDF3"}
 
 FONT_SIZE = 30
 SCALE = 2  # rendered at 2x so the pixel grid stays crisp on high-DPI screens

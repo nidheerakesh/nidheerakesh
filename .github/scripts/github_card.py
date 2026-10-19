@@ -235,9 +235,10 @@ def render_streak(stats, theme="light"):
     body = (
         f'  <circle cx="230" cy="100" r="34" fill="none" stroke="{palette["pale"]}" stroke-width="6"/>\n'
     )
+    ring = palette.get("accent", PINK)
     if filled:
         body += (
-            f'  <circle cx="230" cy="100" r="34" fill="none" stroke="{PINK}" stroke-width="6"'
+            f'  <circle cx="230" cy="100" r="34" fill="none" stroke="{ring}" stroke-width="6"'
             f' stroke-linecap="round" stroke-dasharray="{filled} {round(circumference, 1)}"'
             f' transform="rotate(-90 230 100)"/>\n'
         )
