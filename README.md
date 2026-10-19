@@ -6,9 +6,8 @@
 </div>
 
 <p align="center">
-  CS undergrad at IIIT Kottayam. Most of my time goes to machine learning:<br />
-  graph neural networks for fraud detection, LLM applications, and healthcare AI.<br />
-  Lately I have been contributing to quantum software, including Cirq and QuTiP.
+  CS undergrad at IIIT Kottayam. I work mostly in AI and machine learning,<br />
+  and lately I have been getting into open source.
 </p>
 
 <br />
