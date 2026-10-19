@@ -30,7 +30,7 @@
 <p align="center">
   <b>building:</b> FoundIt, a campus lost and found platform<br />
   <b>contributing:</b> quantum open source, Cirq and QuTiP among them<br />
-  <b>learning:</b> quantum error correction and graph machine learning<br />
+  <b>learning:</b> graph machine learning and quantum software<br />
   <b>open to:</b> internships and collaborations
 </p>
 
