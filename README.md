@@ -82,7 +82,6 @@
   <img src="https://img.shields.io/badge/Cirq-E6E6FA?style=for-the-badge" alt="Cirq" />
   <img src="https://img.shields.io/badge/QuTiP-E6E6FA?style=for-the-badge" alt="QuTiP" />
   <img src="https://img.shields.io/badge/Amazon_Braket-E6E6FA?style=for-the-badge&logo=amazonwebservices&logoColor=black" alt="Amazon Braket" />
-  <img src="https://img.shields.io/badge/Jupyter-E6E6FA?style=for-the-badge&logo=jupyter&logoColor=black" alt="Jupyter" />
   <br />
 
   <img src="https://img.shields.io/badge/Git-FFB6C1?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
