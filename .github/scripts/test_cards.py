@@ -214,11 +214,26 @@ def test_helpers():
     check("dim mutes only unknowns", card.dim(None) and not card.dim(0))
 
 
+def test_terminal():
+    print("\nTerminal card (terminal_card.py)")
+    m = load("terminal_card")
+    for theme in ("light", "dark"):
+        svg = m.render(theme)
+        xml.dom.minidom.parseString(svg)
+        check(f"terminal {theme} parses", True)
+    check("terminal dark has no cream",
+          card.THEMES["light"]["bg"] not in m.render("dark"))
+    labels = [label for label, _ in m.rows()]
+    check("terminal always has the static rows",
+          {"skills", "building", "into"} <= set(labels), str(labels))
+
+
 def main():
     test_helpers()
     test_dsa()
     test_github()
     test_oss()
+    test_terminal()
     print()
     if failures:
         print(f"{len(failures)} failure(s):")

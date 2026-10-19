@@ -5,10 +5,17 @@
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Itim&size=40&duration=2000&pause=3000&color=E0DFF1&center=true&repeat=false&width=600&height=60&lines=Greetings%2C+wanderer!+I'm+Nidhi!" alt="Greetings, wanderer! I'm Nidhi!" /></a>
 </div>
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/terminal-card-dark.svg" />
+    <img src="./assets/terminal-card.svg" width="90%" alt="Nidhi Rakesh, CS undergrad at IIIT Kottayam, with live stats" />
+  </picture>
+</div>
+
 <p align="center">
   Computer science undergrad at IIIT Kottayam. Most of my time goes to AI and machine<br />
-  learning, especially LLM applications and healthcare AI, with regular detours into<br />
-  full stack and cloud. I like problems where the hard part is the thinking.
+  learning, from graph neural networks and healthcare AI to LLM applications, and<br />
+  lately to quantum computing. I like problems where the hard part is the thinking.
 </p>
 
 <br />
@@ -21,8 +28,9 @@
 </div>
 
 <p align="center">
-  <b>building:</b> LLM applications and healthcare AI<br />
-  <b>learning:</b> full stack development and cloud<br />
+  <b>building:</b> FoundIt, a campus lost and found platform<br />
+  <b>contributing:</b> quantum open source, Cirq and QuTiP among them<br />
+  <b>learning:</b> quantum error correction and graph machine learning<br />
   <b>open to:</b> internships and collaborations
 </p>
 
