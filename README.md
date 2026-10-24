@@ -218,18 +218,18 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/nidheerakesh/crypto-graph">
+        <a href="https://github.com/nidheerakesh/APKSentinel">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/crypto-graph-dark.svg" />
-            <img src="./assets/projects/crypto-graph.svg" alt="crypto-graph" />
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/APKSentinel-dark.svg" />
+            <img src="./assets/projects/APKSentinel.svg" alt="APKSentinel" />
           </picture>
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/koode">
+        <a href="https://github.com/nidheerakesh/crypto-graph">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/koode-dark.svg" />
-            <img src="./assets/projects/koode.svg" alt="koode" />
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/crypto-graph-dark.svg" />
+            <img src="./assets/projects/crypto-graph.svg" alt="crypto-graph" />
           </picture>
         </a>
       </td>
