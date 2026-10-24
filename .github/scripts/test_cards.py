@@ -210,12 +210,32 @@ def test_helpers():
     check("wrap handles empty text", card.wrap("", 20, 2) == [])
     check("esc escapes markup", card.esc('<a href="x">&') == "&lt;a href=&quot;x&quot;&gt;&amp;")
     check("num formats thousands", card.num(1234) == "1,234")
-    check("num shows a dash for unknown", card.num(None) == "—")
+    check("num shows a dash for unknown", card.num(None) == "-")
     check("dim mutes only unknowns", card.dim(None) and not card.dim(0))
+
+
+def test_blog():
+    print("\nBlog feed (blog.py)")
+    blog = load("blog")
+    rss = (b'<rss><channel><item><title>A &amp; B</title><link>https://x.dev/a</link>'
+           b'<pubDate>06 Oct 2026 10:00:00 GMT</pubDate></item></channel></rss>')
+    posts = blog.parse_feed(rss)
+    check("rss title is unescaped by the parser", posts[0][0] == "A & B", repr(posts))
+    check("rss date is short", posts[0][2] == "2026-10-06", repr(posts))
+    atom = (b'<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>Hi</title>'
+            b'<link href="https://x.dev/b"/><published>2026-10-07T10:00:00Z</published></entry></feed>')
+    posts = blog.parse_feed(atom)
+    check("atom link comes from href", posts[0][1] == "https://x.dev/b", repr(posts))
+    check("atom date is short", posts[0][2] == "2026-10-07", repr(posts))
+    check("bad date gives empty string", blog.short_date("not a date") == "")
+    check("render escapes titles", "&lt;b&gt;" in blog.render_block([("<b>", "https://x.dev", "")]))
+    check("render shows placeholder with no posts", "No posts yet" in blog.render_block([]))
+    check("render caps at COUNT", blog.render_block([("t", "u", "")] * 9).count("<br />") == blog.COUNT)
 
 
 def main():
     test_helpers()
+    test_blog()
     test_dsa()
     test_github()
     test_oss()

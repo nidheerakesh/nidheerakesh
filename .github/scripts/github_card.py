@@ -200,7 +200,7 @@ def render_langs(languages, theme="light"):
         x = 34 + column * 200
         if index and column == 0:
             y += 26
-        share = f"{100 * size / total:.1f}%" if total else "—"
+        share = f"{100 * size / total:.1f}%" if total else "-"
         body += (
             f'  <circle cx="{x + 5}" cy="{y - 4}" r="5" fill="{RAMP[index % len(RAMP)]}"/>\n'
             f'  <text x="{x + 18}" y="{y}" class="lbl">{esc(truncate(name, 14))}</text>\n'

@@ -40,6 +40,7 @@ HEADINGS = {
     "dsa": "DSA AND CP",
     "built": "THINGS I'VE BUILT",
     "hello": "SAY HELLO",
+    "writing": "WRITING",
 }
 
 CHROME_CANDIDATES = [

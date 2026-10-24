@@ -62,7 +62,7 @@ def style(theme="light"):
 
 
 def num(value):
-    return "—" if value is None else f"{value:,}"
+    return "-" if value is None else f"{value:,}"
 
 
 def dim(value):

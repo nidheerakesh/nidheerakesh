@@ -71,6 +71,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 .github/scripts/projects.py
 
+      # Set the BLOG_FEED repo variable (Settings > Secrets and variables > Actions > Variables).
+      - name: Refresh latest posts
+        env:
+          BLOG_FEED: ${{ vars.BLOG_FEED }}
+        run: python3 .github/scripts/blog.py
+
       - name: Commit
         run: |
           git config user.name  "github-actions[bot]"

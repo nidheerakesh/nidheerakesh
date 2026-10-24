@@ -6,10 +6,9 @@
 </div>
 
 <p align="center">
-  CS undergrad at IIIT Kottayam. Most of my work is in AI and machine learning,<br />
-  and I enjoy building things that other people can actually use.<br />
-  Lately I have been getting into open source, learning from projects<br />
-  maintained by people I admire and trying to give something back.
+  AI and Data Science undergrad at IIIT Kottayam. I work on graph machine learning for security,<br />
+  including fraud detection on transaction graphs.<br />
+  I also build full-stack tools and contribute to open-source quantum software.
 </p>
 
 <br />
@@ -45,30 +44,16 @@
   <img src="https://img.shields.io/badge/Java-E6E6FA?style=for-the-badge&logo=openjdk&logoColor=black" alt="Java" />
   <img src="https://img.shields.io/badge/JavaScript-E6E6FA?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
   <img src="https://img.shields.io/badge/TypeScript-E6E6FA?style=for-the-badge&logo=typescript&logoColor=black" alt="TypeScript" />
-  <img src="https://img.shields.io/badge/Rust-E6E6FA?style=for-the-badge&logo=rust&logoColor=black" alt="Rust" />
   <img src="https://img.shields.io/badge/Bash-E6E6FA?style=for-the-badge&logo=gnubash&logoColor=black" alt="Bash" />
   <br />
-
   <img src="https://img.shields.io/badge/React-FFB6C1?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/Vite-FFB6C1?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/Tailwind-FFB6C1?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind" />
-  <img src="https://img.shields.io/badge/Radix_UI-FFB6C1?style=for-the-badge&logo=radixui&logoColor=white" alt="Radix UI" />
-  <img src="https://img.shields.io/badge/React_Flow-FFB6C1?style=for-the-badge" alt="React Flow" />
-  <img src="https://img.shields.io/badge/HTML5-FFB6C1?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-FFB6C1?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <br />
-
   <img src="https://img.shields.io/badge/Node.js-E6E6FA?style=for-the-badge&logo=nodedotjs&logoColor=black" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express-E6E6FA?style=for-the-badge&logo=express&logoColor=black" alt="Express" />
   <img src="https://img.shields.io/badge/FastAPI-E6E6FA?style=for-the-badge&logo=fastapi&logoColor=black" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Flask-E6E6FA?style=for-the-badge&logo=flask&logoColor=black" alt="Flask" />
-  <img src="https://img.shields.io/badge/Uvicorn-E6E6FA?style=for-the-badge" alt="Uvicorn" />
-  <img src="https://img.shields.io/badge/Pydantic-E6E6FA?style=for-the-badge&logo=pydantic&logoColor=black" alt="Pydantic" />
-  <img src="https://img.shields.io/badge/Firebase-E6E6FA?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
-  <img src="https://img.shields.io/badge/MySQL-E6E6FA?style=for-the-badge&logo=mysql&logoColor=black" alt="MySQL" />
-  <img src="https://img.shields.io/badge/SQLite-E6E6FA?style=for-the-badge&logo=sqlite&logoColor=black" alt="SQLite" />
   <br />
-
   <img src="https://img.shields.io/badge/PyTorch-FFB6C1?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
   <img src="https://img.shields.io/badge/PyTorch_Geometric-FFB6C1?style=for-the-badge" alt="PyTorch Geometric" />
   <img src="https://img.shields.io/badge/TensorFlow-FFB6C1?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
@@ -77,23 +62,15 @@
   <img src="https://img.shields.io/badge/NumPy-FFB6C1?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
   <img src="https://img.shields.io/badge/Pandas-FFB6C1?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/NetworkX-FFB6C1?style=for-the-badge" alt="NetworkX" />
-  <img src="https://img.shields.io/badge/OpenAI_API-FFB6C1?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI API" />
-  <img src="https://img.shields.io/badge/Gemini-FFB6C1?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini" />
   <br />
-
+  <img src="https://img.shields.io/badge/Firebase-E6E6FA?style=for-the-badge&logo=firebase&logoColor=black" alt="Firebase" />
+  <img src="https://img.shields.io/badge/MySQL-E6E6FA?style=for-the-badge&logo=mysql&logoColor=black" alt="MySQL" />
+  <img src="https://img.shields.io/badge/SQLite-E6E6FA?style=for-the-badge&logo=sqlite&logoColor=black" alt="SQLite" />
   <img src="https://img.shields.io/badge/Cirq-E6E6FA?style=for-the-badge" alt="Cirq" />
   <img src="https://img.shields.io/badge/QuTiP-E6E6FA?style=for-the-badge" alt="QuTiP" />
-  <img src="https://img.shields.io/badge/Amazon_Braket-E6E6FA?style=for-the-badge&logo=amazonwebservices&logoColor=black" alt="Amazon Braket" />
-  <br />
-
   <img src="https://img.shields.io/badge/Git-FFB6C1?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub-FFB6C1?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  <img src="https://img.shields.io/badge/VS_Code-FFB6C1?style=for-the-badge&logo=visualstudiocode&logoColor=white" alt="VS Code" />
   <img src="https://img.shields.io/badge/Linux-FFB6C1?style=for-the-badge&logo=linux&logoColor=white" alt="Linux" />
-  <img src="https://img.shields.io/badge/Postman-FFB6C1?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-  <img src="https://img.shields.io/badge/Vercel-FFB6C1?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/Figma-FFB6C1?style=for-the-badge&logo=figma&logoColor=white" alt="Figma" />
-  <img src="https://img.shields.io/badge/Replit-FFB6C1?style=for-the-badge&logo=replit&logoColor=white" alt="Replit" />
 
 </div>
 
@@ -237,6 +214,21 @@
   </table>
 </div>
 <!-- PROJECTS:END -->
+
+<br />
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/headings/writing-dark.png" />
+    <img src="./assets/headings/writing-light.png" alt="Writing" height="23" />
+  </picture>
+</div>
+
+<!-- BLOG:START -->
+<p align="center">
+  <em>No posts yet. This refreshes itself.</em>
+</p>
+<!-- BLOG:END -->
 
 <br />
 

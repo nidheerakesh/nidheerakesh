@@ -30,6 +30,7 @@ from card import (  # noqa: E402
 
 USER = "nidheerakesh"
 COUNT = 4
+EXCLUDED = {"nidhee.tech", "portfolio"}
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 README = ROOT / "README.md"
 CARDS = ROOT / "assets" / "projects"
@@ -70,6 +71,7 @@ def pick(repos):
         and not r.get("fork")
         and not r.get("archived")
         and r.get("name", "").lower() != USER.lower()
+        and r.get("name", "").lower() not in EXCLUDED
     ]
     eligible.sort(
         key=lambda r: (r.get("stargazers_count", 0), r.get("pushed_at") or r.get("updated_at") or ""),
@@ -94,7 +96,7 @@ def render_card(repo, theme="light"):
     body += f'  <circle cx="39" cy="{footer - 4}" r="5" fill="{accent}"/>\n'
     body += (
         f'  <text x="52" y="{footer}" class="s">'
-        f'{esc(language or "—")}</text>\n'
+        f'{esc(language or "-")}</text>\n'
     )
     body += (
         f'  <text x="{CARD_WIDTH - 34}" y="{footer}" class="s" text-anchor="end">'
