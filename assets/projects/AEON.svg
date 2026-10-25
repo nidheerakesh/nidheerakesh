@@ -15,7 +15,8 @@
   <circle cx="50" cy="34" r="6" fill="#E6E6FA"/>
   <text x="70" y="39" class="t">AEON</text>
   <text x="366" y="39" class="s" text-anchor="end"></text>
-  <text x="34" y="76" class="s">No description yet.</text>
+  <text x="34" y="76" class="s">Gamified 12-week ML, backend, and MLOps</text>
+  <text x="34" y="93" class="s">learning roadmap with boss fights, built…</text>
   <circle cx="39" cy="120" r="5" fill="#B8CAE8"/>
   <text x="52" y="124" class="s">TypeScript</text>
   <text x="366" y="124" class="s" text-anchor="end">1 stars · 0 forks</text>
