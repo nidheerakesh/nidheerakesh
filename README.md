@@ -226,10 +226,10 @@
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/nidhee.tech">
+        <a href="https://github.com/nidheerakesh/optdsproj">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/nidhee.tech-dark.svg" />
-            <img src="./assets/projects/nidhee.tech.svg" alt="nidhee.tech" />
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/optdsproj-dark.svg" />
+            <img src="./assets/projects/optdsproj.svg" alt="optdsproj" />
           </picture>
         </a>
       </td>
