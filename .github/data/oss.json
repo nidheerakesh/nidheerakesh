@@ -1,8 +1,13 @@
 {
-  "merged": 5,
-  "prs": 7,
-  "repos": 6,
+  "merged": 7,
+  "prs": 9,
+  "repos": 7,
   "top": [
+    {
+      "merged": 2,
+      "prs": 2,
+      "repo": "moneytosms/qcproj"
+    },
     {
       "merged": 2,
       "prs": 2,
@@ -22,11 +27,6 @@
       "merged": 1,
       "prs": 1,
       "repo": "moneytosms/croniter-rs"
-    },
-    {
-      "merged": 0,
-      "prs": 1,
-      "repo": "quantumlib/Cirq"
     }
   ]
 }
