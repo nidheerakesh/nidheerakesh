@@ -1,5 +1,5 @@
 {
-  "merged": 7,
+  "merged": 8,
   "prs": 9,
   "repos": 7,
   "top": [
@@ -16,17 +16,17 @@
     {
       "merged": 1,
       "prs": 1,
+      "repo": "quantumlib/Cirq"
+    },
+    {
+      "merged": 1,
+      "prs": 1,
       "repo": "Deltakit/deltakit"
     },
     {
       "merged": 1,
       "prs": 1,
       "repo": "qutip/qutip"
-    },
-    {
-      "merged": 1,
-      "prs": 1,
-      "repo": "moneytosms/croniter-rs"
     }
   ]
 }
