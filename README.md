@@ -218,18 +218,18 @@
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/nidheerakesh/nudge">
+        <a href="https://github.com/nidheerakesh/no-ai">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/nudge-dark.svg" />
-            <img src="./assets/projects/nudge.svg" alt="nudge" />
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/no-ai-dark.svg" />
+            <img src="./assets/projects/no-ai.svg" alt="no-ai" />
           </picture>
         </a>
       </td>
       <td>
-        <a href="https://github.com/nidheerakesh/GitResume">
+        <a href="https://github.com/nidheerakesh/nudge">
           <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/GitResume-dark.svg" />
-            <img src="./assets/projects/GitResume.svg" alt="GitResume" />
+            <source media="(prefers-color-scheme: dark)" srcset="./assets/projects/nudge-dark.svg" />
+            <img src="./assets/projects/nudge.svg" alt="nudge" />
           </picture>
         </a>
       </td>
